@@ -1,0 +1,12 @@
+Z:\Suites Numériques\bin\Debug\Suites Numériques.exe.config
+Z:\Suites Numériques\bin\Debug\Suites Numériques.exe
+Z:\Suites Numériques\bin\Debug\Suites Numériques.pdb
+Z:\Suites Numériques\obj\Debug\Suites Numériques.csproj.AssemblyReference.cache
+Z:\Suites Numériques\obj\Debug\Suites_Numériques.Properties.Resources.resources
+Z:\Suites Numériques\obj\Debug\Suites Numériques.csproj.GenerateResource.cache
+Z:\Suites Numériques\obj\Debug\Suites Numériques.csproj.CoreCompileInputs.cache
+Z:\Suites Numériques\obj\Debug\Suites Numériques.exe
+Z:\Suites Numériques\obj\Debug\Suites Numériques.pdb
+Z:\Suites Numériques\obj\Debug\Suites_Numériques.Interface_Acceuil.resources
+Z:\Suites Numériques\obj\Debug\Suites_Numériques.Interface_Arithmetique.resources
+Z:\Suites Numériques\obj\Debug\Suites_Numériques.Interface_Geometrique.resources
