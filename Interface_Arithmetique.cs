@@ -135,8 +135,8 @@ namespace Suites_Numériques
             label_U1_raison.Text = $"U{Program.MettreEnIndice(rang_raison1)} : {suite.TermeDeRang(rang_raison1)}";
             label_U2_raison.Text = $"U{Program.MettreEnIndice(rang_raison2)} : {suite.TermeDeRang(rang_raison2)}";
             label_question_raison.Text = "Quelles sont les valeurs de la raison r et du premier terme U\u2080 ?";
-            label_reponseR_raison.Text = "";
-            label_reponse_raison.Text = "";
+            label_reponseR_raison.Text = "r :";
+            label_reponse_raison.Text = "U\u2080 :";
             label_verif_raison.Text = "";
         }
 
@@ -144,8 +144,8 @@ namespace Suites_Numériques
         {
             label_U0_somme.Text = $"U\u2080 : {suite.Premier}";
             label_r_somme.Text = $"r : {suite.Raison}";
-            label_question_somme.Text = $"Quelle est la somme des {rang_somme} premiers termes ?";
-            label_reponse_somme.Text = "";
+            label_question_somme.Text = $"Quelle est la somme des {rang_somme +1} premiers termes ?";
+            label_reponse_somme.Text = $"U{Program.MettreEnIndice(rang_somme)} :";
             label_verif_somme.Text = "";
         }
 
@@ -161,7 +161,6 @@ namespace Suites_Numériques
 
         }
 
-        // faire toutes les fonctions pour màj
 
         private void Correction(string reponse, int solution, Label monLabel)
         {
@@ -215,8 +214,8 @@ namespace Suites_Numériques
 
         private void btn_valider_raison_Click(object sender, EventArgs e)
         {
-            string reponse = textBox_reponseR_raison.Text.Trim() + textBox_reponse_premierTerme.Text.Trim();
-            string solution = $"{suite.Raison}{suite.Premier}";
+            string reponse = $"{textBox_reponseR_raison.Text.Trim()}$${textBox_reponse_premierTerme.Text.Trim()}";
+            string solution = $"{suite.Raison}$${suite.Premier}";
 
             Correction(reponse, solution, label_verif_raison);
         }
@@ -229,7 +228,8 @@ namespace Suites_Numériques
         private void btn_valider_somme_Click(object sender, EventArgs e)
         {
             string reponse = textBox_reponse_somme.Text;
-            int solution = 0;
+            int solution = suite.SommeDesTermes(rang_somme);
+            textBox_reponse_somme.Text = solution.ToString();
 
             Correction(reponse, solution, label_verif_somme);
         }

@@ -10,3 +10,15 @@ Z:\Suites Numériques\obj\Debug\Suites Numériques.pdb
 Z:\Suites Numériques\obj\Debug\Suites_Numériques.Interface_Acceuil.resources
 Z:\Suites Numériques\obj\Debug\Suites_Numériques.Interface_Arithmetique.resources
 Z:\Suites Numériques\obj\Debug\Suites_Numériques.Interface_Geometrique.resources
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.csproj.AssemblyReference.cache
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Acceuil.resources
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Arithmetique.resources
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Geometrique.resources
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Properties.Resources.resources
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.csproj.GenerateResource.cache
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.csproj.CoreCompileInputs.cache
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.exe
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.pdb
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\bin\Debug\Suites Numériques.exe.config
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\bin\Debug\Suites Numériques.exe
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\bin\Debug\Suites Numériques.pdb

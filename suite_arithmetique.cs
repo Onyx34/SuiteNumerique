@@ -46,12 +46,24 @@ namespace Suites_Numériques
 
         public int SommeDesTermes(int laSomme)
         {
-            // (n+1)(u0+un)/2
+            return (laSomme + 1) * (premier_terme + TermeDeRang(laSomme)) / 2;
+
         }
 
         public string Monotonie()
         {
-
+            if (raison > 0)
+            {
+                return "Croissante";
+            }
+            else if (raison < 0)
+            {
+                return "Décroissante";
+            }
+            else
+            {
+                return "Constante";
+            }
         }
     }
 }
