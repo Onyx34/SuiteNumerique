@@ -214,7 +214,6 @@ namespace Suites_Numériques
             {
                 btn.Checked = false;
             }
-
         }
 
 

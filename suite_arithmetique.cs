@@ -37,7 +37,6 @@ namespace Suites_Numériques
             set { raison = value; }
         }
 
-
         // Methodes
         public int TermeDeRang(int leRang)
         {
