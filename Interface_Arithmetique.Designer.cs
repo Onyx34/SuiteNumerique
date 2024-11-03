@@ -60,6 +60,9 @@
             this.label_U0_rang = new System.Windows.Forms.Label();
             this.btn_nouvelle_rang = new System.Windows.Forms.Button();
             this.tabPage_Raison = new System.Windows.Forms.TabPage();
+            this.label_verif_raison = new System.Windows.Forms.Label();
+            this.textBox_reponseR_raison = new System.Windows.Forms.TextBox();
+            this.label_reponseR_raison = new System.Windows.Forms.Label();
             this.btn_valider_raison = new System.Windows.Forms.Button();
             this.textBox_reponse_raison = new System.Windows.Forms.TextBox();
             this.label_reponse_raison = new System.Windows.Forms.Label();
@@ -69,6 +72,7 @@
             this.label_U1_raison = new System.Windows.Forms.Label();
             this.btn_nouvelle_raison = new System.Windows.Forms.Button();
             this.tabPage_Somme = new System.Windows.Forms.TabPage();
+            this.label_verif_somme = new System.Windows.Forms.Label();
             this.btn_valider_somme = new System.Windows.Forms.Button();
             this.textBox_reponse_somme = new System.Windows.Forms.TextBox();
             this.label_reponse_somme = new System.Windows.Forms.Label();
@@ -78,6 +82,12 @@
             this.label_U0_somme = new System.Windows.Forms.Label();
             this.btn_nouvelle_somme = new System.Windows.Forms.Button();
             this.tabPage_Monotonie = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioBtn_Décroissante = new System.Windows.Forms.RadioButton();
+            this.radioBtn_Constante = new System.Windows.Forms.RadioButton();
+            this.radioBtn_Croissante = new System.Windows.Forms.RadioButton();
+            this.radioBtn_NonMonotone = new System.Windows.Forms.RadioButton();
+            this.label_verif_monotonie = new System.Windows.Forms.Label();
             this.btn_valider_monotonie = new System.Windows.Forms.Button();
             this.label_reponse_monotonie = new System.Windows.Forms.Label();
             this.label_question_monotonie = new System.Windows.Forms.Label();
@@ -85,16 +95,6 @@
             this.label_r_monotonie = new System.Windows.Forms.Label();
             this.label_U0_monotonie = new System.Windows.Forms.Label();
             this.btn_nouvelle_monotonie = new System.Windows.Forms.Button();
-            this.textBox_reponseR_raison = new System.Windows.Forms.TextBox();
-            this.label_reponseR_raison = new System.Windows.Forms.Label();
-            this.label_verif_raison = new System.Windows.Forms.Label();
-            this.label_verif_somme = new System.Windows.Forms.Label();
-            this.label_verif_monotonie = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.tabControl.SuspendLayout();
             this.tabPage_UnTerme.SuspendLayout();
             this.tabPage_PremierTerme.SuspendLayout();
@@ -443,6 +443,31 @@
             this.tabPage_Raison.Text = "La Raison et le premier terme";
             this.tabPage_Raison.UseVisualStyleBackColor = true;
             // 
+            // label_verif_raison
+            // 
+            this.label_verif_raison.AutoSize = true;
+            this.label_verif_raison.Location = new System.Drawing.Point(334, 251);
+            this.label_verif_raison.Name = "label_verif_raison";
+            this.label_verif_raison.Size = new System.Drawing.Size(89, 13);
+            this.label_verif_raison.TabIndex = 32;
+            this.label_verif_raison.Text = "label_verif_raison";
+            // 
+            // textBox_reponseR_raison
+            // 
+            this.textBox_reponseR_raison.Location = new System.Drawing.Point(81, 230);
+            this.textBox_reponseR_raison.Name = "textBox_reponseR_raison";
+            this.textBox_reponseR_raison.Size = new System.Drawing.Size(236, 20);
+            this.textBox_reponseR_raison.TabIndex = 30;
+            // 
+            // label_reponseR_raison
+            // 
+            this.label_reponseR_raison.AutoSize = true;
+            this.label_reponseR_raison.Location = new System.Drawing.Point(19, 233);
+            this.label_reponseR_raison.Name = "label_reponseR_raison";
+            this.label_reponseR_raison.Size = new System.Drawing.Size(56, 13);
+            this.label_reponseR_raison.TabIndex = 31;
+            this.label_reponseR_raison.Text = "Réponse :";
+            // 
             // btn_valider_raison
             // 
             this.btn_valider_raison.Location = new System.Drawing.Point(187, 287);
@@ -533,6 +558,15 @@
             this.tabPage_Somme.TabIndex = 4;
             this.tabPage_Somme.Text = "La Somme";
             this.tabPage_Somme.UseVisualStyleBackColor = true;
+            // 
+            // label_verif_somme
+            // 
+            this.label_verif_somme.AutoSize = true;
+            this.label_verif_somme.Location = new System.Drawing.Point(334, 251);
+            this.label_verif_somme.Name = "label_verif_somme";
+            this.label_verif_somme.Size = new System.Drawing.Size(94, 13);
+            this.label_verif_somme.TabIndex = 33;
+            this.label_verif_somme.Text = "label_verif_somme";
             // 
             // btn_valider_somme
             // 
@@ -625,6 +659,70 @@
             this.tabPage_Monotonie.Text = "La Monotonie";
             this.tabPage_Monotonie.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioBtn_Décroissante);
+            this.groupBox1.Controls.Add(this.radioBtn_Constante);
+            this.groupBox1.Controls.Add(this.radioBtn_Croissante);
+            this.groupBox1.Controls.Add(this.radioBtn_NonMonotone);
+            this.groupBox1.Location = new System.Drawing.Point(70, 212);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(264, 69);
+            this.groupBox1.TabIndex = 35;
+            this.groupBox1.TabStop = false;
+            // 
+            // radioBtn_Décroissante
+            // 
+            this.radioBtn_Décroissante.AutoSize = true;
+            this.radioBtn_Décroissante.Location = new System.Drawing.Point(132, 39);
+            this.radioBtn_Décroissante.Name = "radioBtn_Décroissante";
+            this.radioBtn_Décroissante.Size = new System.Drawing.Size(136, 17);
+            this.radioBtn_Décroissante.TabIndex = 3;
+            this.radioBtn_Décroissante.TabStop = true;
+            this.radioBtn_Décroissante.Text = "Monotone décroissante";
+            this.radioBtn_Décroissante.UseVisualStyleBackColor = true;
+            // 
+            // radioBtn_Constante
+            // 
+            this.radioBtn_Constante.AutoSize = true;
+            this.radioBtn_Constante.Location = new System.Drawing.Point(132, 14);
+            this.radioBtn_Constante.Name = "radioBtn_Constante";
+            this.radioBtn_Constante.Size = new System.Drawing.Size(123, 17);
+            this.radioBtn_Constante.TabIndex = 2;
+            this.radioBtn_Constante.Text = "Monotone constante";
+            this.radioBtn_Constante.UseVisualStyleBackColor = true;
+            // 
+            // radioBtn_Croissante
+            // 
+            this.radioBtn_Croissante.AutoSize = true;
+            this.radioBtn_Croissante.Location = new System.Drawing.Point(6, 39);
+            this.radioBtn_Croissante.Name = "radioBtn_Croissante";
+            this.radioBtn_Croissante.Size = new System.Drawing.Size(124, 17);
+            this.radioBtn_Croissante.TabIndex = 1;
+            this.radioBtn_Croissante.TabStop = true;
+            this.radioBtn_Croissante.Text = "Monotone croissante";
+            this.radioBtn_Croissante.UseVisualStyleBackColor = true;
+            // 
+            // radioBtn_NonMonotone
+            // 
+            this.radioBtn_NonMonotone.AutoSize = true;
+            this.radioBtn_NonMonotone.Location = new System.Drawing.Point(6, 14);
+            this.radioBtn_NonMonotone.Name = "radioBtn_NonMonotone";
+            this.radioBtn_NonMonotone.Size = new System.Drawing.Size(95, 17);
+            this.radioBtn_NonMonotone.TabIndex = 0;
+            this.radioBtn_NonMonotone.TabStop = true;
+            this.radioBtn_NonMonotone.Text = "Non monotone";
+            this.radioBtn_NonMonotone.UseVisualStyleBackColor = true;
+            // 
+            // label_verif_monotonie
+            // 
+            this.label_verif_monotonie.AutoSize = true;
+            this.label_verif_monotonie.Location = new System.Drawing.Point(340, 251);
+            this.label_verif_monotonie.Name = "label_verif_monotonie";
+            this.label_verif_monotonie.Size = new System.Drawing.Size(110, 13);
+            this.label_verif_monotonie.TabIndex = 34;
+            this.label_verif_monotonie.Text = "label_verif_monotonie";
+            // 
             // btn_valider_monotonie
             // 
             this.btn_valider_monotonie.Location = new System.Drawing.Point(187, 287);
@@ -633,6 +731,7 @@
             this.btn_valider_monotonie.TabIndex = 23;
             this.btn_valider_monotonie.Text = "Valider";
             this.btn_valider_monotonie.UseVisualStyleBackColor = true;
+            this.btn_valider_monotonie.Click += new System.EventHandler(this.btn_valider_monotonie_Click);
             // 
             // label_reponse_monotonie
             // 
@@ -687,105 +786,7 @@
             this.btn_nouvelle_monotonie.TabIndex = 24;
             this.btn_nouvelle_monotonie.Text = "Nouvelle recherche";
             this.btn_nouvelle_monotonie.UseVisualStyleBackColor = true;
-            // 
-            // textBox_reponseR_raison
-            // 
-            this.textBox_reponseR_raison.Location = new System.Drawing.Point(81, 230);
-            this.textBox_reponseR_raison.Name = "textBox_reponseR_raison";
-            this.textBox_reponseR_raison.Size = new System.Drawing.Size(236, 20);
-            this.textBox_reponseR_raison.TabIndex = 30;
-            // 
-            // label_reponseR_raison
-            // 
-            this.label_reponseR_raison.AutoSize = true;
-            this.label_reponseR_raison.Location = new System.Drawing.Point(19, 233);
-            this.label_reponseR_raison.Name = "label_reponseR_raison";
-            this.label_reponseR_raison.Size = new System.Drawing.Size(56, 13);
-            this.label_reponseR_raison.TabIndex = 31;
-            this.label_reponseR_raison.Text = "Réponse :";
-            // 
-            // label_verif_raison
-            // 
-            this.label_verif_raison.AutoSize = true;
-            this.label_verif_raison.Location = new System.Drawing.Point(334, 251);
-            this.label_verif_raison.Name = "label_verif_raison";
-            this.label_verif_raison.Size = new System.Drawing.Size(89, 13);
-            this.label_verif_raison.TabIndex = 32;
-            this.label_verif_raison.Text = "label_verif_raison";
-            // 
-            // label_verif_somme
-            // 
-            this.label_verif_somme.AutoSize = true;
-            this.label_verif_somme.Location = new System.Drawing.Point(334, 251);
-            this.label_verif_somme.Name = "label_verif_somme";
-            this.label_verif_somme.Size = new System.Drawing.Size(94, 13);
-            this.label_verif_somme.TabIndex = 33;
-            this.label_verif_somme.Text = "label_verif_somme";
-            // 
-            // label_verif_monotonie
-            // 
-            this.label_verif_monotonie.AutoSize = true;
-            this.label_verif_monotonie.Location = new System.Drawing.Point(340, 251);
-            this.label_verif_monotonie.Name = "label_verif_monotonie";
-            this.label_verif_monotonie.Size = new System.Drawing.Size(110, 13);
-            this.label_verif_monotonie.TabIndex = 34;
-            this.label_verif_monotonie.Text = "label_verif_monotonie";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(70, 212);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(264, 69);
-            this.groupBox1.TabIndex = 35;
-            this.groupBox1.TabStop = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 14);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(95, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Non monotone";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 39);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(124, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Monotone croissante";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(132, 39);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(136, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Monotone décroissante";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(132, 14);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(123, 17);
-            this.radioButton4.TabIndex = 2;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Monotone constante";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.btn_nouvelle_monotonie.Click += new System.EventHandler(this.btn_nouvelle_monotonie_Click);
             // 
             // Interface_Arithmetique
             // 
@@ -881,9 +882,9 @@
         private System.Windows.Forms.Label label_verif_somme;
         private System.Windows.Forms.Label label_verif_monotonie;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioBtn_Décroissante;
+        private System.Windows.Forms.RadioButton radioBtn_Constante;
+        private System.Windows.Forms.RadioButton radioBtn_Croissante;
+        private System.Windows.Forms.RadioButton radioBtn_NonMonotone;
     }
 }
