@@ -37,12 +37,12 @@ namespace Suites_Numériques
         // Methodes
         public int TermeDeRang(int leRang)
         {
-            return premier_terme * (raison ^ leRang);
+            return premier_terme * (int)Math.Pow(raison, leRang);
         }
 
         public int SommeDesTermes(int rangLaSomme)
         {
-            return premier_terme * ((1 - raison ^ (rangLaSomme + 1)) / (1 - raison));
+            return premier_terme * ((1 - raison ^ (rangLaSomme + 1)) / (1 - raison)); // Division par 0 ??
         }
 
         public string Monotonie()

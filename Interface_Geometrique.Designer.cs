@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tabPage_UnTerme = new System.Windows.Forms.TabPage();
+            this.label_verif_terme = new System.Windows.Forms.Label();
             this.btn_valider_terme = new System.Windows.Forms.Button();
             this.textBox_reponse_terme = new System.Windows.Forms.TextBox();
             this.label_reponse_terme = new System.Windows.Forms.Label();
@@ -37,17 +38,19 @@
             this.label_r_terme = new System.Windows.Forms.Label();
             this.label_U0_terme = new System.Windows.Forms.Label();
             this.btn_nouvelle_terme = new System.Windows.Forms.Button();
-            this.btn_nouvelle_premierTerme = new System.Windows.Forms.TabControl();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage_PremierTerme = new System.Windows.Forms.TabPage();
+            this.label_verif_premierTerme = new System.Windows.Forms.Label();
             this.btn_valider_premierTerme = new System.Windows.Forms.Button();
             this.textBox_reponse_premierTerme = new System.Windows.Forms.TextBox();
             this.label_reponse_premierTerme = new System.Windows.Forms.Label();
             this.label_question_premierTerme = new System.Windows.Forms.Label();
             this.label_information_premierTerme = new System.Windows.Forms.Label();
             this.label_r_premierTerme = new System.Windows.Forms.Label();
-            this.label_U0_premierTerme = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label_rang_premierTerme = new System.Windows.Forms.Label();
+            this.btn_nouvelle_premierTerme = new System.Windows.Forms.Button();
             this.tabPage_Rang = new System.Windows.Forms.TabPage();
+            this.label_verif_rang = new System.Windows.Forms.Label();
             this.btn_valider_rang = new System.Windows.Forms.Button();
             this.textBox_reponse_rang = new System.Windows.Forms.TextBox();
             this.label_reponse_rang = new System.Windows.Forms.Label();
@@ -57,15 +60,19 @@
             this.label_U0_rang = new System.Windows.Forms.Label();
             this.btn_nouvelle_rang = new System.Windows.Forms.Button();
             this.tabPage_Raison = new System.Windows.Forms.TabPage();
+            this.label_verif_raison = new System.Windows.Forms.Label();
+            this.label_reponse_raison = new System.Windows.Forms.Label();
+            this.textBox_reponse_raison = new System.Windows.Forms.TextBox();
             this.btn_valider_raison = new System.Windows.Forms.Button();
             this.textBox_reponseR_raison = new System.Windows.Forms.TextBox();
             this.label_reponseR_raison = new System.Windows.Forms.Label();
             this.label_question_raison = new System.Windows.Forms.Label();
             this.label_information_raison = new System.Windows.Forms.Label();
-            this.label_r_raison = new System.Windows.Forms.Label();
-            this.label_U0_raison = new System.Windows.Forms.Label();
+            this.label_U2_raison = new System.Windows.Forms.Label();
+            this.label_U1_raison = new System.Windows.Forms.Label();
             this.btn_nouvelle_raison = new System.Windows.Forms.Button();
             this.tabPage_Somme = new System.Windows.Forms.TabPage();
+            this.label_verif_somme = new System.Windows.Forms.Label();
             this.btn_valider_somme = new System.Windows.Forms.Button();
             this.textBox_reponse_somme = new System.Windows.Forms.TextBox();
             this.label_reponse_somme = new System.Windows.Forms.Label();
@@ -75,14 +82,6 @@
             this.label_U0_somme = new System.Windows.Forms.Label();
             this.btn_nouvelle_somme = new System.Windows.Forms.Button();
             this.tabPage_Monotonie = new System.Windows.Forms.TabPage();
-            this.btn_valider_monotonie = new System.Windows.Forms.Button();
-            this.label_question_monotonie = new System.Windows.Forms.Label();
-            this.label_information_monotonie = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label_U0_monotonie = new System.Windows.Forms.Label();
-            this.btn_nouvelle_monotonie = new System.Windows.Forms.Button();
-            this.textBox_reponse_raison = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioBtn_Décroissante = new System.Windows.Forms.RadioButton();
             this.radioBtn_Constante = new System.Windows.Forms.RadioButton();
@@ -90,13 +89,14 @@
             this.radioBtn_NonMonotone = new System.Windows.Forms.RadioButton();
             this.label_verif_monotonie = new System.Windows.Forms.Label();
             this.label_reponse_monotonie = new System.Windows.Forms.Label();
-            this.label_verif_somme = new System.Windows.Forms.Label();
-            this.label_verif_raison = new System.Windows.Forms.Label();
-            this.label_verif_rang = new System.Windows.Forms.Label();
-            this.label_verif_premierTerme = new System.Windows.Forms.Label();
-            this.label_verif_terme = new System.Windows.Forms.Label();
+            this.btn_valider_monotonie = new System.Windows.Forms.Button();
+            this.label_question_monotonie = new System.Windows.Forms.Label();
+            this.label_information_monotonie = new System.Windows.Forms.Label();
+            this.label_r_monotonie = new System.Windows.Forms.Label();
+            this.label_U0_monotonie = new System.Windows.Forms.Label();
+            this.btn_nouvelle_monotonie = new System.Windows.Forms.Button();
             this.tabPage_UnTerme.SuspendLayout();
-            this.btn_nouvelle_premierTerme.SuspendLayout();
+            this.tabControl.SuspendLayout();
             this.tabPage_PremierTerme.SuspendLayout();
             this.tabPage_Rang.SuspendLayout();
             this.tabPage_Raison.SuspendLayout();
@@ -124,6 +124,15 @@
             this.tabPage_UnTerme.Text = "Un Terme";
             this.tabPage_UnTerme.UseVisualStyleBackColor = true;
             // 
+            // label_verif_terme
+            // 
+            this.label_verif_terme.AutoSize = true;
+            this.label_verif_terme.Location = new System.Drawing.Point(334, 251);
+            this.label_verif_terme.Name = "label_verif_terme";
+            this.label_verif_terme.Size = new System.Drawing.Size(87, 13);
+            this.label_verif_terme.TabIndex = 42;
+            this.label_verif_terme.Text = "label_verif_terme";
+            // 
             // btn_valider_terme
             // 
             this.btn_valider_terme.Location = new System.Drawing.Point(187, 287);
@@ -132,6 +141,7 @@
             this.btn_valider_terme.TabIndex = 4;
             this.btn_valider_terme.Text = "Valider";
             this.btn_valider_terme.UseVisualStyleBackColor = true;
+            this.btn_valider_terme.Click += new System.EventHandler(this.btn_valider_terme_Click);
             // 
             // textBox_reponse_terme
             // 
@@ -193,24 +203,24 @@
             this.btn_nouvelle_terme.TabIndex = 5;
             this.btn_nouvelle_terme.Text = "Nouvelle recherche";
             this.btn_nouvelle_terme.UseVisualStyleBackColor = true;
-            this.btn_nouvelle_terme.Click += new System.EventHandler(this.btn_nouvelle_Click);
+            this.btn_nouvelle_terme.Click += new System.EventHandler(this.btn_nouvelle_terme_Click);
             // 
-            // btn_nouvelle_premierTerme
+            // tabControl
             // 
-            this.btn_nouvelle_premierTerme.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_nouvelle_premierTerme.Controls.Add(this.tabPage_UnTerme);
-            this.btn_nouvelle_premierTerme.Controls.Add(this.tabPage_PremierTerme);
-            this.btn_nouvelle_premierTerme.Controls.Add(this.tabPage_Rang);
-            this.btn_nouvelle_premierTerme.Controls.Add(this.tabPage_Raison);
-            this.btn_nouvelle_premierTerme.Controls.Add(this.tabPage_Somme);
-            this.btn_nouvelle_premierTerme.Controls.Add(this.tabPage_Monotonie);
-            this.btn_nouvelle_premierTerme.Location = new System.Drawing.Point(0, 0);
-            this.btn_nouvelle_premierTerme.Name = "btn_nouvelle_premierTerme";
-            this.btn_nouvelle_premierTerme.SelectedIndex = 0;
-            this.btn_nouvelle_premierTerme.Size = new System.Drawing.Size(498, 354);
-            this.btn_nouvelle_premierTerme.TabIndex = 1;
+            this.tabControl.Controls.Add(this.tabPage_UnTerme);
+            this.tabControl.Controls.Add(this.tabPage_PremierTerme);
+            this.tabControl.Controls.Add(this.tabPage_Rang);
+            this.tabControl.Controls.Add(this.tabPage_Raison);
+            this.tabControl.Controls.Add(this.tabPage_Somme);
+            this.tabControl.Controls.Add(this.tabPage_Monotonie);
+            this.tabControl.Location = new System.Drawing.Point(0, 0);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(498, 354);
+            this.tabControl.TabIndex = 1;
             // 
             // tabPage_PremierTerme
             // 
@@ -221,8 +231,8 @@
             this.tabPage_PremierTerme.Controls.Add(this.label_question_premierTerme);
             this.tabPage_PremierTerme.Controls.Add(this.label_information_premierTerme);
             this.tabPage_PremierTerme.Controls.Add(this.label_r_premierTerme);
-            this.tabPage_PremierTerme.Controls.Add(this.label_U0_premierTerme);
-            this.tabPage_PremierTerme.Controls.Add(this.button2);
+            this.tabPage_PremierTerme.Controls.Add(this.label_rang_premierTerme);
+            this.tabPage_PremierTerme.Controls.Add(this.btn_nouvelle_premierTerme);
             this.tabPage_PremierTerme.Location = new System.Drawing.Point(4, 22);
             this.tabPage_PremierTerme.Name = "tabPage_PremierTerme";
             this.tabPage_PremierTerme.Padding = new System.Windows.Forms.Padding(3);
@@ -230,6 +240,15 @@
             this.tabPage_PremierTerme.TabIndex = 1;
             this.tabPage_PremierTerme.Text = "Le Premier Terme";
             this.tabPage_PremierTerme.UseVisualStyleBackColor = true;
+            // 
+            // label_verif_premierTerme
+            // 
+            this.label_verif_premierTerme.AutoSize = true;
+            this.label_verif_premierTerme.Location = new System.Drawing.Point(334, 251);
+            this.label_verif_premierTerme.Name = "label_verif_premierTerme";
+            this.label_verif_premierTerme.Size = new System.Drawing.Size(125, 13);
+            this.label_verif_premierTerme.TabIndex = 41;
+            this.label_verif_premierTerme.Text = "label_verif_premierTerme";
             // 
             // btn_valider_premierTerme
             // 
@@ -239,6 +258,7 @@
             this.btn_valider_premierTerme.TabIndex = 4;
             this.btn_valider_premierTerme.Text = "Valider";
             this.btn_valider_premierTerme.UseVisualStyleBackColor = true;
+            this.btn_valider_premierTerme.Click += new System.EventHandler(this.btn_valider_premierTerme_Click);
             // 
             // textBox_reponse_premierTerme
             // 
@@ -261,9 +281,9 @@
             this.label_question_premierTerme.AutoSize = true;
             this.label_question_premierTerme.Location = new System.Drawing.Point(8, 230);
             this.label_question_premierTerme.Name = "label_question_premierTerme";
-            this.label_question_premierTerme.Size = new System.Drawing.Size(145, 13);
+            this.label_question_premierTerme.Size = new System.Drawing.Size(202, 13);
             this.label_question_premierTerme.TabIndex = 12;
-            this.label_question_premierTerme.Text = "label_question_premierTerme";
+            this.label_question_premierTerme.Text = "Quelle est la valeur du premier terme U₀ ?";
             // 
             // label_information_premierTerme
             // 
@@ -283,23 +303,24 @@
             this.label_r_premierTerme.TabIndex = 10;
             this.label_r_premierTerme.Text = "label_r_premierTerme";
             // 
-            // label_U0_premierTerme
+            // label_rang_premierTerme
             // 
-            this.label_U0_premierTerme.AutoSize = true;
-            this.label_U0_premierTerme.Location = new System.Drawing.Point(33, 96);
-            this.label_U0_premierTerme.Name = "label_U0_premierTerme";
-            this.label_U0_premierTerme.Size = new System.Drawing.Size(119, 13);
-            this.label_U0_premierTerme.TabIndex = 9;
-            this.label_U0_premierTerme.Text = "label_U0_premierTerme";
+            this.label_rang_premierTerme.AutoSize = true;
+            this.label_rang_premierTerme.Location = new System.Drawing.Point(33, 96);
+            this.label_rang_premierTerme.Name = "label_rang_premierTerme";
+            this.label_rang_premierTerme.Size = new System.Drawing.Size(126, 13);
+            this.label_rang_premierTerme.TabIndex = 9;
+            this.label_rang_premierTerme.Text = "label_rang_premierTerme";
             // 
-            // button2
+            // btn_nouvelle_premierTerme
             // 
-            this.button2.Location = new System.Drawing.Point(155, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Nouvelle recherche";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_nouvelle_premierTerme.Location = new System.Drawing.Point(155, 22);
+            this.btn_nouvelle_premierTerme.Name = "btn_nouvelle_premierTerme";
+            this.btn_nouvelle_premierTerme.Size = new System.Drawing.Size(150, 23);
+            this.btn_nouvelle_premierTerme.TabIndex = 5;
+            this.btn_nouvelle_premierTerme.Text = "Nouvelle recherche";
+            this.btn_nouvelle_premierTerme.UseVisualStyleBackColor = true;
+            this.btn_nouvelle_premierTerme.Click += new System.EventHandler(this.btn_nouvelle_premierTerme_Click);
             // 
             // tabPage_Rang
             // 
@@ -320,6 +341,15 @@
             this.tabPage_Rang.Text = "Le Rang";
             this.tabPage_Rang.UseVisualStyleBackColor = true;
             // 
+            // label_verif_rang
+            // 
+            this.label_verif_rang.AutoSize = true;
+            this.label_verif_rang.Location = new System.Drawing.Point(334, 251);
+            this.label_verif_rang.Name = "label_verif_rang";
+            this.label_verif_rang.Size = new System.Drawing.Size(82, 13);
+            this.label_verif_rang.TabIndex = 40;
+            this.label_verif_rang.Text = "label_verif_rang";
+            // 
             // btn_valider_rang
             // 
             this.btn_valider_rang.Location = new System.Drawing.Point(187, 287);
@@ -328,6 +358,7 @@
             this.btn_valider_rang.TabIndex = 4;
             this.btn_valider_rang.Text = "Valider";
             this.btn_valider_rang.UseVisualStyleBackColor = true;
+            this.btn_valider_rang.Click += new System.EventHandler(this.btn_valider_rang_Click);
             // 
             // textBox_reponse_rang
             // 
@@ -389,19 +420,20 @@
             this.btn_nouvelle_rang.TabIndex = 5;
             this.btn_nouvelle_rang.Text = "Nouvelle recherche";
             this.btn_nouvelle_rang.UseVisualStyleBackColor = true;
+            this.btn_nouvelle_rang.Click += new System.EventHandler(this.btn_nouvelle_rang_Click);
             // 
             // tabPage_Raison
             // 
             this.tabPage_Raison.Controls.Add(this.label_verif_raison);
-            this.tabPage_Raison.Controls.Add(this.label1);
+            this.tabPage_Raison.Controls.Add(this.label_reponse_raison);
             this.tabPage_Raison.Controls.Add(this.textBox_reponse_raison);
             this.tabPage_Raison.Controls.Add(this.btn_valider_raison);
             this.tabPage_Raison.Controls.Add(this.textBox_reponseR_raison);
             this.tabPage_Raison.Controls.Add(this.label_reponseR_raison);
             this.tabPage_Raison.Controls.Add(this.label_question_raison);
             this.tabPage_Raison.Controls.Add(this.label_information_raison);
-            this.tabPage_Raison.Controls.Add(this.label_r_raison);
-            this.tabPage_Raison.Controls.Add(this.label_U0_raison);
+            this.tabPage_Raison.Controls.Add(this.label_U2_raison);
+            this.tabPage_Raison.Controls.Add(this.label_U1_raison);
             this.tabPage_Raison.Controls.Add(this.btn_nouvelle_raison);
             this.tabPage_Raison.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Raison.Name = "tabPage_Raison";
@@ -411,6 +443,31 @@
             this.tabPage_Raison.Text = "La Raison et le premier terme";
             this.tabPage_Raison.UseVisualStyleBackColor = true;
             // 
+            // label_verif_raison
+            // 
+            this.label_verif_raison.AutoSize = true;
+            this.label_verif_raison.Location = new System.Drawing.Point(334, 251);
+            this.label_verif_raison.Name = "label_verif_raison";
+            this.label_verif_raison.Size = new System.Drawing.Size(89, 13);
+            this.label_verif_raison.TabIndex = 39;
+            this.label_verif_raison.Text = "label_verif_raison";
+            // 
+            // label_reponse_raison
+            // 
+            this.label_reponse_raison.AutoSize = true;
+            this.label_reponse_raison.Location = new System.Drawing.Point(19, 260);
+            this.label_reponse_raison.Name = "label_reponse_raison";
+            this.label_reponse_raison.Size = new System.Drawing.Size(25, 13);
+            this.label_reponse_raison.TabIndex = 23;
+            this.label_reponse_raison.Text = "U₀ :";
+            // 
+            // textBox_reponse_raison
+            // 
+            this.textBox_reponse_raison.Location = new System.Drawing.Point(81, 260);
+            this.textBox_reponse_raison.Name = "textBox_reponse_raison";
+            this.textBox_reponse_raison.Size = new System.Drawing.Size(236, 20);
+            this.textBox_reponse_raison.TabIndex = 22;
+            // 
             // btn_valider_raison
             // 
             this.btn_valider_raison.Location = new System.Drawing.Point(187, 296);
@@ -419,6 +476,7 @@
             this.btn_valider_raison.TabIndex = 4;
             this.btn_valider_raison.Text = "Valider";
             this.btn_valider_raison.UseVisualStyleBackColor = true;
+            this.btn_valider_raison.Click += new System.EventHandler(this.btn_valider_raison_Click);
             // 
             // textBox_reponseR_raison
             // 
@@ -454,23 +512,23 @@
             this.label_information_raison.TabIndex = 19;
             this.label_information_raison.Text = "Soit la suite géométrique (Uₙ) de premier terme U₀ et de raison r :";
             // 
-            // label_r_raison
+            // label_U2_raison
             // 
-            this.label_r_raison.AutoSize = true;
-            this.label_r_raison.Location = new System.Drawing.Point(33, 125);
-            this.label_r_raison.Name = "label_r_raison";
-            this.label_r_raison.Size = new System.Drawing.Size(72, 13);
-            this.label_r_raison.TabIndex = 18;
-            this.label_r_raison.Text = "label_r_raison";
+            this.label_U2_raison.AutoSize = true;
+            this.label_U2_raison.Location = new System.Drawing.Point(33, 125);
+            this.label_U2_raison.Name = "label_U2_raison";
+            this.label_U2_raison.Size = new System.Drawing.Size(83, 13);
+            this.label_U2_raison.TabIndex = 18;
+            this.label_U2_raison.Text = "label_U2_raison";
             // 
-            // label_U0_raison
+            // label_U1_raison
             // 
-            this.label_U0_raison.AutoSize = true;
-            this.label_U0_raison.Location = new System.Drawing.Point(33, 96);
-            this.label_U0_raison.Name = "label_U0_raison";
-            this.label_U0_raison.Size = new System.Drawing.Size(83, 13);
-            this.label_U0_raison.TabIndex = 17;
-            this.label_U0_raison.Text = "label_U0_raison";
+            this.label_U1_raison.AutoSize = true;
+            this.label_U1_raison.Location = new System.Drawing.Point(33, 96);
+            this.label_U1_raison.Name = "label_U1_raison";
+            this.label_U1_raison.Size = new System.Drawing.Size(83, 13);
+            this.label_U1_raison.TabIndex = 17;
+            this.label_U1_raison.Text = "label_U1_raison";
             // 
             // btn_nouvelle_raison
             // 
@@ -480,6 +538,7 @@
             this.btn_nouvelle_raison.TabIndex = 5;
             this.btn_nouvelle_raison.Text = "Nouvelle recherche";
             this.btn_nouvelle_raison.UseVisualStyleBackColor = true;
+            this.btn_nouvelle_raison.Click += new System.EventHandler(this.btn_nouvelle_raison_Click);
             // 
             // tabPage_Somme
             // 
@@ -500,6 +559,15 @@
             this.tabPage_Somme.Text = "La Somme";
             this.tabPage_Somme.UseVisualStyleBackColor = true;
             // 
+            // label_verif_somme
+            // 
+            this.label_verif_somme.AutoSize = true;
+            this.label_verif_somme.Location = new System.Drawing.Point(334, 251);
+            this.label_verif_somme.Name = "label_verif_somme";
+            this.label_verif_somme.Size = new System.Drawing.Size(94, 13);
+            this.label_verif_somme.TabIndex = 38;
+            this.label_verif_somme.Text = "label_verif_somme";
+            // 
             // btn_valider_somme
             // 
             this.btn_valider_somme.Location = new System.Drawing.Point(187, 287);
@@ -508,6 +576,7 @@
             this.btn_valider_somme.TabIndex = 4;
             this.btn_valider_somme.Text = "Valider";
             this.btn_valider_somme.UseVisualStyleBackColor = true;
+            this.btn_valider_somme.Click += new System.EventHandler(this.btn_valider_somme_Click);
             // 
             // textBox_reponse_somme
             // 
@@ -569,6 +638,7 @@
             this.btn_nouvelle_somme.TabIndex = 5;
             this.btn_nouvelle_somme.Text = "Nouvelle recherche";
             this.btn_nouvelle_somme.UseVisualStyleBackColor = true;
+            this.btn_nouvelle_somme.Click += new System.EventHandler(this.btn_nouvelle_somme_Click);
             // 
             // tabPage_Monotonie
             // 
@@ -578,7 +648,7 @@
             this.tabPage_Monotonie.Controls.Add(this.btn_valider_monotonie);
             this.tabPage_Monotonie.Controls.Add(this.label_question_monotonie);
             this.tabPage_Monotonie.Controls.Add(this.label_information_monotonie);
-            this.tabPage_Monotonie.Controls.Add(this.label24);
+            this.tabPage_Monotonie.Controls.Add(this.label_r_monotonie);
             this.tabPage_Monotonie.Controls.Add(this.label_U0_monotonie);
             this.tabPage_Monotonie.Controls.Add(this.btn_nouvelle_monotonie);
             this.tabPage_Monotonie.Location = new System.Drawing.Point(4, 22);
@@ -588,76 +658,6 @@
             this.tabPage_Monotonie.TabIndex = 5;
             this.tabPage_Monotonie.Text = "La Monotonie";
             this.tabPage_Monotonie.UseVisualStyleBackColor = true;
-            // 
-            // btn_valider_monotonie
-            // 
-            this.btn_valider_monotonie.Location = new System.Drawing.Point(187, 287);
-            this.btn_valider_monotonie.Name = "btn_valider_monotonie";
-            this.btn_valider_monotonie.Size = new System.Drawing.Size(75, 23);
-            this.btn_valider_monotonie.TabIndex = 4;
-            this.btn_valider_monotonie.Text = "Valider";
-            this.btn_valider_monotonie.UseVisualStyleBackColor = true;
-            // 
-            // label_question_monotonie
-            // 
-            this.label_question_monotonie.AutoSize = true;
-            this.label_question_monotonie.Location = new System.Drawing.Point(3, 196);
-            this.label_question_monotonie.Name = "label_question_monotonie";
-            this.label_question_monotonie.Size = new System.Drawing.Size(130, 13);
-            this.label_question_monotonie.TabIndex = 20;
-            this.label_question_monotonie.Text = "label_question_monotonie";
-            // 
-            // label_information_monotonie
-            // 
-            this.label_information_monotonie.AutoSize = true;
-            this.label_information_monotonie.Location = new System.Drawing.Point(8, 68);
-            this.label_information_monotonie.Name = "label_information_monotonie";
-            this.label_information_monotonie.Size = new System.Drawing.Size(309, 13);
-            this.label_information_monotonie.TabIndex = 19;
-            this.label_information_monotonie.Text = "Soit la suite géométrique (Uₙ) de premier terme U₀ et de raison r :";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(33, 125);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(93, 13);
-            this.label24.TabIndex = 18;
-            this.label24.Text = "label_r_monotonie";
-            // 
-            // label_U0_monotonie
-            // 
-            this.label_U0_monotonie.AutoSize = true;
-            this.label_U0_monotonie.Location = new System.Drawing.Point(33, 96);
-            this.label_U0_monotonie.Name = "label_U0_monotonie";
-            this.label_U0_monotonie.Size = new System.Drawing.Size(104, 13);
-            this.label_U0_monotonie.TabIndex = 17;
-            this.label_U0_monotonie.Text = "label_U0_monotonie";
-            // 
-            // btn_nouvelle_monotonie
-            // 
-            this.btn_nouvelle_monotonie.Location = new System.Drawing.Point(155, 22);
-            this.btn_nouvelle_monotonie.Name = "btn_nouvelle_monotonie";
-            this.btn_nouvelle_monotonie.Size = new System.Drawing.Size(150, 23);
-            this.btn_nouvelle_monotonie.TabIndex = 5;
-            this.btn_nouvelle_monotonie.Text = "Nouvelle recherche";
-            this.btn_nouvelle_monotonie.UseVisualStyleBackColor = true;
-            // 
-            // textBox_reponse_raison
-            // 
-            this.textBox_reponse_raison.Location = new System.Drawing.Point(81, 260);
-            this.textBox_reponse_raison.Name = "textBox_reponse_raison";
-            this.textBox_reponse_raison.Size = new System.Drawing.Size(236, 20);
-            this.textBox_reponse_raison.TabIndex = 22;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 260);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 13);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "U₀ :";
             // 
             // groupBox1
             // 
@@ -732,64 +732,75 @@
             this.label_reponse_monotonie.TabIndex = 36;
             this.label_reponse_monotonie.Text = "Réponse :";
             // 
-            // label_verif_somme
+            // btn_valider_monotonie
             // 
-            this.label_verif_somme.AutoSize = true;
-            this.label_verif_somme.Location = new System.Drawing.Point(334, 251);
-            this.label_verif_somme.Name = "label_verif_somme";
-            this.label_verif_somme.Size = new System.Drawing.Size(94, 13);
-            this.label_verif_somme.TabIndex = 38;
-            this.label_verif_somme.Text = "label_verif_somme";
+            this.btn_valider_monotonie.Location = new System.Drawing.Point(187, 287);
+            this.btn_valider_monotonie.Name = "btn_valider_monotonie";
+            this.btn_valider_monotonie.Size = new System.Drawing.Size(75, 23);
+            this.btn_valider_monotonie.TabIndex = 4;
+            this.btn_valider_monotonie.Text = "Valider";
+            this.btn_valider_monotonie.UseVisualStyleBackColor = true;
+            this.btn_valider_monotonie.Click += new System.EventHandler(this.btn_valider_monotonie_Click);
             // 
-            // label_verif_raison
+            // label_question_monotonie
             // 
-            this.label_verif_raison.AutoSize = true;
-            this.label_verif_raison.Location = new System.Drawing.Point(334, 251);
-            this.label_verif_raison.Name = "label_verif_raison";
-            this.label_verif_raison.Size = new System.Drawing.Size(89, 13);
-            this.label_verif_raison.TabIndex = 39;
-            this.label_verif_raison.Text = "label_verif_raison";
+            this.label_question_monotonie.AutoSize = true;
+            this.label_question_monotonie.Location = new System.Drawing.Point(3, 196);
+            this.label_question_monotonie.Name = "label_question_monotonie";
+            this.label_question_monotonie.Size = new System.Drawing.Size(130, 13);
+            this.label_question_monotonie.TabIndex = 20;
+            this.label_question_monotonie.Text = "label_question_monotonie";
             // 
-            // label_verif_rang
+            // label_information_monotonie
             // 
-            this.label_verif_rang.AutoSize = true;
-            this.label_verif_rang.Location = new System.Drawing.Point(334, 251);
-            this.label_verif_rang.Name = "label_verif_rang";
-            this.label_verif_rang.Size = new System.Drawing.Size(82, 13);
-            this.label_verif_rang.TabIndex = 40;
-            this.label_verif_rang.Text = "label_verif_rang";
+            this.label_information_monotonie.AutoSize = true;
+            this.label_information_monotonie.Location = new System.Drawing.Point(8, 68);
+            this.label_information_monotonie.Name = "label_information_monotonie";
+            this.label_information_monotonie.Size = new System.Drawing.Size(309, 13);
+            this.label_information_monotonie.TabIndex = 19;
+            this.label_information_monotonie.Text = "Soit la suite géométrique (Uₙ) de premier terme U₀ et de raison r :";
             // 
-            // label_verif_premierTerme
+            // label_r_monotonie
             // 
-            this.label_verif_premierTerme.AutoSize = true;
-            this.label_verif_premierTerme.Location = new System.Drawing.Point(334, 251);
-            this.label_verif_premierTerme.Name = "label_verif_premierTerme";
-            this.label_verif_premierTerme.Size = new System.Drawing.Size(125, 13);
-            this.label_verif_premierTerme.TabIndex = 41;
-            this.label_verif_premierTerme.Text = "label_verif_premierTerme";
+            this.label_r_monotonie.AutoSize = true;
+            this.label_r_monotonie.Location = new System.Drawing.Point(33, 125);
+            this.label_r_monotonie.Name = "label_r_monotonie";
+            this.label_r_monotonie.Size = new System.Drawing.Size(93, 13);
+            this.label_r_monotonie.TabIndex = 18;
+            this.label_r_monotonie.Text = "label_r_monotonie";
             // 
-            // label_verif_terme
+            // label_U0_monotonie
             // 
-            this.label_verif_terme.AutoSize = true;
-            this.label_verif_terme.Location = new System.Drawing.Point(334, 251);
-            this.label_verif_terme.Name = "label_verif_terme";
-            this.label_verif_terme.Size = new System.Drawing.Size(87, 13);
-            this.label_verif_terme.TabIndex = 42;
-            this.label_verif_terme.Text = "label_verif_terme";
+            this.label_U0_monotonie.AutoSize = true;
+            this.label_U0_monotonie.Location = new System.Drawing.Point(33, 96);
+            this.label_U0_monotonie.Name = "label_U0_monotonie";
+            this.label_U0_monotonie.Size = new System.Drawing.Size(104, 13);
+            this.label_U0_monotonie.TabIndex = 17;
+            this.label_U0_monotonie.Text = "label_U0_monotonie";
+            // 
+            // btn_nouvelle_monotonie
+            // 
+            this.btn_nouvelle_monotonie.Location = new System.Drawing.Point(155, 22);
+            this.btn_nouvelle_monotonie.Name = "btn_nouvelle_monotonie";
+            this.btn_nouvelle_monotonie.Size = new System.Drawing.Size(150, 23);
+            this.btn_nouvelle_monotonie.TabIndex = 5;
+            this.btn_nouvelle_monotonie.Text = "Nouvelle recherche";
+            this.btn_nouvelle_monotonie.UseVisualStyleBackColor = true;
+            this.btn_nouvelle_monotonie.Click += new System.EventHandler(this.btn_nouvelle_monotonie_Click);
             // 
             // Interface_Geometrique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 353);
-            this.Controls.Add(this.btn_nouvelle_premierTerme);
+            this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Interface_Geometrique";
             this.Text = "Geometrique";
             this.tabPage_UnTerme.ResumeLayout(false);
             this.tabPage_UnTerme.PerformLayout();
-            this.btn_nouvelle_premierTerme.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
             this.tabPage_PremierTerme.ResumeLayout(false);
             this.tabPage_PremierTerme.PerformLayout();
             this.tabPage_Rang.ResumeLayout(false);
@@ -810,7 +821,7 @@
 
         private System.Windows.Forms.TabPage tabPage_UnTerme;
         private System.Windows.Forms.Button btn_nouvelle_terme;
-        private System.Windows.Forms.TabControl btn_nouvelle_premierTerme;
+        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPage_PremierTerme;
         private System.Windows.Forms.TabPage tabPage_Rang;
         private System.Windows.Forms.TabPage tabPage_Raison;
@@ -829,8 +840,8 @@
         private System.Windows.Forms.Label label_question_premierTerme;
         private System.Windows.Forms.Label label_information_premierTerme;
         private System.Windows.Forms.Label label_r_premierTerme;
-        private System.Windows.Forms.Label label_U0_premierTerme;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label_rang_premierTerme;
+        private System.Windows.Forms.Button btn_nouvelle_premierTerme;
         private System.Windows.Forms.Button btn_valider_rang;
         private System.Windows.Forms.TextBox textBox_reponse_rang;
         private System.Windows.Forms.Label label_reponse_rang;
@@ -844,8 +855,8 @@
         private System.Windows.Forms.Label label_reponseR_raison;
         private System.Windows.Forms.Label label_question_raison;
         private System.Windows.Forms.Label label_information_raison;
-        private System.Windows.Forms.Label label_r_raison;
-        private System.Windows.Forms.Label label_U0_raison;
+        private System.Windows.Forms.Label label_U2_raison;
+        private System.Windows.Forms.Label label_U1_raison;
         private System.Windows.Forms.Button btn_nouvelle_raison;
         private System.Windows.Forms.Button btn_valider_somme;
         private System.Windows.Forms.TextBox textBox_reponse_somme;
@@ -858,10 +869,10 @@
         private System.Windows.Forms.Button btn_valider_monotonie;
         private System.Windows.Forms.Label label_question_monotonie;
         private System.Windows.Forms.Label label_information_monotonie;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label_r_monotonie;
         private System.Windows.Forms.Label label_U0_monotonie;
         private System.Windows.Forms.Button btn_nouvelle_monotonie;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_reponse_raison;
         private System.Windows.Forms.TextBox textBox_reponse_raison;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioBtn_Décroissante;

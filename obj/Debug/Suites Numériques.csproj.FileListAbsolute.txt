@@ -22,3 +22,15 @@ C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.pd
 C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\bin\Debug\Suites Numériques.exe.config
 C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\bin\Debug\Suites Numériques.exe
 C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\bin\Debug\Suites Numériques.pdb
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\bin\Debug\Suites Numériques.exe.config
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\bin\Debug\Suites Numériques.exe
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\bin\Debug\Suites Numériques.pdb
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.csproj.AssemblyReference.cache
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Acceuil.resources
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Arithmetique.resources
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Geometrique.resources
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Numériques.Properties.Resources.resources
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.csproj.GenerateResource.cache
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.csproj.CoreCompileInputs.cache
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.exe
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.pdb

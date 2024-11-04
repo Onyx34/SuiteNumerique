@@ -43,7 +43,6 @@ namespace Suites_Numériques
             int solution = suite.TermeDeRang(rang_terme);
 
             Correction(reponse, solution, label_verif_terme);
-
         }
 
         private void btn_nouvelle_premierTerme_Click(object sender, EventArgs e)
@@ -200,7 +199,7 @@ namespace Suites_Numériques
             label_U0_somme.Text = $"U\u2080 : {suite.Premier}";
             label_r_somme.Text = $"r : {suite.Raison}";
             label_question_somme.Text = $"Quelle est la somme des {rang_somme +1} premiers termes ?";
-            label_reponse_somme.Text = $"U{Program.MettreEnIndice(rang_somme)} :";
+            label_reponse_somme.Text = $"S{Program.MettreEnIndice(rang_somme)} :";
             label_verif_somme.Text = "";
         }
 
