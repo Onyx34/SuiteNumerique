@@ -12,10 +12,9 @@ namespace Suites_Numériques
         private int raison;
 
         // Constructeurs
-        public suite_geometrique() : base(GenererPremier())
+        public suite_geometrique() : base(Program.GenererAleatoire(-15, 15))
         {
-            Random rnd = new Random();
-            raison = rnd.Next(-10, 10);
+            raison = Program.GenererAleatoire(-5, 5);
         }
 
         public suite_geometrique(int LaRaison, int LePremier) : base(LePremier)
@@ -28,7 +27,6 @@ namespace Suites_Numériques
             raison = LaRaison;
         }
 
-
         // Accesseurs
         public int Raison
         {
@@ -36,13 +34,35 @@ namespace Suites_Numériques
             set { raison = value; }
         }
 
-
         // Methodes
-        private static int GenererPremier()
+        public int TermeDeRang(int leRang)
         {
-            Random rnd = new Random();
-            int premier = rnd.Next(-50, 50);
-            return premier;
+            return premier_terme * (raison ^ leRang);
+        }
+
+        public int SommeDesTermes(int rangLaSomme)
+        {
+            return premier_terme * ((1 - raison ^ (rangLaSomme + 1)) / (1 - raison));
+        }
+
+        public string Monotonie()
+        {
+            if ((raison > 1 && premier_terme > 0) ||  (raison == 0 && premier_terme < 0))
+            {
+                return "Croissante";
+            }
+            else if ((raison > 1 && premier_terme < 0) || (raison > 0 && raison < 1 && premier_terme > 0) || (raison == 0 && premier_terme > 0))
+            {
+                return "Décroissante";
+            }
+            else if (raison == 1 || premier_terme == 0)
+            {
+                return "Constante";
+            }
+            else
+            {
+                return "NonMonotone";
+            }
         }
     }
 }

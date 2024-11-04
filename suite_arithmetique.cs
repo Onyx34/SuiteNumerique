@@ -29,7 +29,6 @@ namespace Suites_Numériques
             raison = LaRaison;
         }
 
-
         // Accesseurs
         public int Raison
         {
@@ -43,9 +42,9 @@ namespace Suites_Numériques
             return premier_terme + (leRang * raison);
         }
 
-        public int SommeDesTermes(int laSomme)
+        public int SommeDesTermes(int rangLaSomme)
         {
-            return (laSomme + 1) * (premier_terme + TermeDeRang(laSomme)) / 2;
+            return (rangLaSomme + 1) * (premier_terme + TermeDeRang(rangLaSomme)) / 2;
 
         }
 
