@@ -13,13 +13,13 @@ namespace Suites_Numériques
         private void toolStrip_Arithmetiques_Click(object sender, EventArgs e)
         {
             Interface_Arithmetique arithmetique = new Interface_Arithmetique();
-            arithmetique.Show();
+            arithmetique.ShowDialog();
         }
 
         private void toolStrip_Geometrique_Click(object sender, EventArgs e)
         {
             Interface_Geometrique geometrique = new Interface_Geometrique();
-            geometrique.Show();
+            geometrique.ShowDialog();
         }
     }
 }

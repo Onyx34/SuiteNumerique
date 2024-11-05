@@ -126,14 +126,15 @@
             this.label_Acceuil.Text = "Fondamentaux sur les suites numériques";
             this.label_Acceuil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Acceuil
+            // Interface_Acceuil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.label_Acceuil);
             this.Controls.Add(this.menuStrip);
-            this.Name = "Acceuil";
+            this.Name = "Interface_Acceuil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Etude des suites numérique en mathématique";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
