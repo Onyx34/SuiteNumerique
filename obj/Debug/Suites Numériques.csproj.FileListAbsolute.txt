@@ -34,3 +34,4 @@ Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Nu
 Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.csproj.CoreCompileInputs.cache
 Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.exe
 Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.pdb
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Jeu.resources
