@@ -124,13 +124,20 @@ namespace Suites_Numériques
             // Initialisation des vleurs
             suite = new suite_geometrique();
 
-            rang_terme = Program.GenererAleatoire(1, 10);
-            rang_premierTerme = Program.GenererAleatoire(1, 10); // Les rangs peuvent être identiques, à gérer !
-            rang_rang = Program.GenererAleatoire(1, 10);
-            rang_raison1 = Program.GenererAleatoire(1, 10);
-            rang_raison2 = Program.GenererAleatoire(1, 10);
-            rang_somme = Program.GenererAleatoire(1, 10);
+            rang_terme = Program.GenererAleatoire(1, 8);
+            rang_premierTerme = Program.GenererAleatoire(1, 8); // Les rangs peuvent être identiques, à gérer !
+            rang_rang = Program.GenererAleatoire(1, 8);
+            rang_raison1 = Program.GenererAleatoire(1, 8);
+            rang_raison2 = Program.GenererAleatoire(1, 8);
+            rang_somme = Program.GenererAleatoire(1, 8);
 
+            // Inversion de rang_raison1 et rang_raison2 si rang_raison1 > rang_raison2
+            if (rang_raison1 > rang_raison2)
+            {
+                int temp = rang_raison1;
+                rang_raison1 = rang_raison2;
+                rang_raison2 = temp;
+            }
 
             // Mise à jour des champs 
 
@@ -156,8 +163,8 @@ namespace Suites_Numériques
         private void MaJ_premierTerme()
         {
             // Permet de mettre à jour les champs de l'onglet Un Terme
-            label_information_premierTerme.Text = $"Soit la suite arithmétique (Uₙ) définie par le terme (U{Program.MettreEnIndice(rang_rang)}) et de raison r :";
-            label_rang_premierTerme.Text = $"U{Program.MettreEnIndice(rang_rang)} : {suite.TermeDeRang(rang_premierTerme)}";
+            label_information_premierTerme.Text = $"Soit la suite arithmétique (Uₙ) définie par le terme (U{Program.MettreEnIndice(rang_premierTerme)}) et de raison r :";
+            label_rang_premierTerme.Text = $"U{Program.MettreEnIndice(rang_premierTerme)} : {suite.TermeDeRang(rang_premierTerme)}";
             label_r_premierTerme.Text = $"r : {suite.Raison}";
             label_verif_premierTerme.Text = "";
             textBox_reponse_premierTerme.Text = "";
@@ -176,6 +183,7 @@ namespace Suites_Numériques
         private void MaJ_raison()
         {
             // Permet de mettre à jour les champs de l'onglet raison
+            // Problème ebn cas de plusieur possiblité de réponse ? Ex : raison négative ou null
             label_information_raison.Text = $"Soit la suite arithmétique (Uₙ) définie par les termes U{Program.MettreEnIndice(rang_raison1)} et U{Program.MettreEnIndice(rang_raison2)}";
             label_U1_raison.Text = $"U{Program.MettreEnIndice(rang_raison1)} : {suite.TermeDeRang(rang_raison1)}";
             label_U2_raison.Text = $"U{Program.MettreEnIndice(rang_raison2)} : {suite.TermeDeRang(rang_raison2)}";

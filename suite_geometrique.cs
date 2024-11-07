@@ -12,7 +12,7 @@ namespace Suites_Numériques
         private int raison;
 
         // Constructeurs
-        public suite_geometrique() : base(Program.GenererAleatoire(-15, 15))
+        public suite_geometrique() : base(Program.GenererAleatoire(-8, 8))
         {
             raison = Program.GenererAleatoire(-5, 5);
         }
@@ -42,12 +42,12 @@ namespace Suites_Numériques
 
         public int SommeDesTermes(int rangLaSomme)
         {
-            return premier_terme * ((1 - raison ^ (rangLaSomme + 1)) / (1 - raison)); // Division par 0 ??
+            return premier_terme * ((int)Math.Pow(raison, rangLaSomme + 1) - 1) / (raison - 1);
         }
 
         public string Monotonie()
         {
-            if ((raison > 1 && premier_terme > 0) ||  (raison == 0 && premier_terme < 0))
+            if ((raison > 1 && premier_terme > 0) || (raison == 0 && premier_terme < 0))
             {
                 return "Croissante";
             }
