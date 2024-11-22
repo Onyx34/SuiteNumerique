@@ -99,12 +99,14 @@
             this.toolStrip_SansContrainte.Name = "toolStrip_SansContrainte";
             this.toolStrip_SansContrainte.Size = new System.Drawing.Size(209, 22);
             this.toolStrip_SansContrainte.Text = "Sans Contrainte";
+            this.toolStrip_SansContrainte.Click += new System.EventHandler(this.toolStrip_SansContrainte_Click);
             // 
             // toolStrip_AvecContrainte
             // 
             this.toolStrip_AvecContrainte.Name = "toolStrip_AvecContrainte";
             this.toolStrip_AvecContrainte.Size = new System.Drawing.Size(209, 22);
             this.toolStrip_AvecContrainte.Text = "Avec contrainte de temps";
+            this.toolStrip_AvecContrainte.Click += new System.EventHandler(this.toolStrip_AvecContrainte_Click);
             // 
             // menuStrip_Meilleurs_temps
             // 

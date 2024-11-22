@@ -48,3 +48,4 @@ C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques
 C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.csproj.CoreCompileInputs.cache
 C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.exe
 C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.pdb
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_InitialisationJeu.resources

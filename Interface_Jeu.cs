@@ -16,5 +16,10 @@ namespace Suites_Numériques
         {
             InitializeComponent();
         }
+        internal Interface_Jeu(joueur joueur, int question, bool AvecChrono, int suite)
+        {
+            InitializeComponent();
+           
+        }
     }
 }
