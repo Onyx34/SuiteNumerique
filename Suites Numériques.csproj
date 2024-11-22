@@ -64,6 +64,12 @@
     <Compile Include="Interface_Geometrique.Designer.cs">
       <DependentUpon>Interface_Geometrique.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface_InitialisationJeu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_InitialisationJeu.Designer.cs">
+      <DependentUpon>Interface_InitialisationJeu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface_Jeu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interface_Geometrique.resx">
       <DependentUpon>Interface_Geometrique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_InitialisationJeu.resx">
+      <DependentUpon>Interface_InitialisationJeu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface_Jeu.resx">
       <DependentUpon>Interface_Jeu.cs</DependentUpon>
