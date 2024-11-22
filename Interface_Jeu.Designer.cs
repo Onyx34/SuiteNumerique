@@ -48,6 +48,8 @@
             this.label_check_4 = new System.Windows.Forms.Label();
             this.label_check_5 = new System.Windows.Forms.Label();
             this.label_check_6 = new System.Windows.Forms.Label();
+            this.btn_valider = new System.Windows.Forms.Button();
+            this.button_aide = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -257,11 +259,33 @@
             this.label_check_6.TabIndex = 46;
             this.label_check_6.Text = "X";
             // 
+            // btn_valider
+            // 
+            this.btn_valider.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_valider.Location = new System.Drawing.Point(191, 413);
+            this.btn_valider.Name = "btn_valider";
+            this.btn_valider.Size = new System.Drawing.Size(95, 25);
+            this.btn_valider.TabIndex = 47;
+            this.btn_valider.Text = "Valider";
+            this.btn_valider.UseVisualStyleBackColor = true;
+            // 
+            // button_aide
+            // 
+            this.button_aide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_aide.Location = new System.Drawing.Point(664, 351);
+            this.button_aide.Name = "button_aide";
+            this.button_aide.Size = new System.Drawing.Size(81, 29);
+            this.button_aide.TabIndex = 48;
+            this.button_aide.Text = "AIDE ?";
+            this.button_aide.UseVisualStyleBackColor = true;
+            // 
             // Interface_Jeu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_aide);
+            this.Controls.Add(this.btn_valider);
             this.Controls.Add(this.label_check_6);
             this.Controls.Add(this.label_check_5);
             this.Controls.Add(this.label_check_4);
@@ -309,5 +333,7 @@
         private System.Windows.Forms.Label label_check_4;
         private System.Windows.Forms.Label label_check_5;
         private System.Windows.Forms.Label label_check_6;
+        private System.Windows.Forms.Button btn_valider;
+        private System.Windows.Forms.Button button_aide;
     }
 }

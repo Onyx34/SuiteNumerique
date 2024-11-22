@@ -35,3 +35,16 @@ Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Nu
 Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.exe
 Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites Numériques.pdb
 C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Jeu.resources
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\bin\Debug\Suites Numériques.exe.config
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\bin\Debug\Suites Numériques.exe
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\bin\Debug\Suites Numériques.pdb
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.csproj.AssemblyReference.cache
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Acceuil.resources
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Arithmetique.resources
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Geometrique.resources
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Jeu.resources
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Properties.Resources.resources
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.csproj.GenerateResource.cache
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.csproj.CoreCompileInputs.cache
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.exe
+C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.pdb
