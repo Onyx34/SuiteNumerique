@@ -163,7 +163,7 @@ namespace Suites_Numériques
         private void MaJ_premierTerme()
         {
             // Permet de mettre à jour les champs de l'onglet Un Terme
-            label_information_premierTerme.Text = $"Soit la suite arithmétique (Uₙ) définie par le terme (U{Program.MettreEnIndice(rang_premierTerme)}) et de raison r :";
+            label_information_premierTerme.Text = $"Soit la suite géométrique (Uₙ) définie par le terme (U{Program.MettreEnIndice(rang_premierTerme)}) et de raison r :";
             label_rang_premierTerme.Text = $"U{Program.MettreEnIndice(rang_premierTerme)} : {suite.TermeDeRang(rang_premierTerme)}";
             label_r_premierTerme.Text = $"r : {suite.Raison}";
             label_verif_premierTerme.Text = "";
@@ -184,7 +184,7 @@ namespace Suites_Numériques
         {
             // Permet de mettre à jour les champs de l'onglet raison
             // Problème ebn cas de plusieur possiblité de réponse ? Ex : raison négative ou null
-            label_information_raison.Text = $"Soit la suite arithmétique (Uₙ) définie par les termes U{Program.MettreEnIndice(rang_raison1)} et U{Program.MettreEnIndice(rang_raison2)}";
+            label_information_raison.Text = $"Soit la suite géométrique (Uₙ) définie par les termes U{Program.MettreEnIndice(rang_raison1)} et U{Program.MettreEnIndice(rang_raison2)}";
             label_U1_raison.Text = $"U{Program.MettreEnIndice(rang_raison1)} : {suite.TermeDeRang(rang_raison1)}";
             label_U2_raison.Text = $"U{Program.MettreEnIndice(rang_raison2)} : {suite.TermeDeRang(rang_raison2)}";
             label_question_raison.Text = "Quelles sont les valeurs de la raison r et du premier terme U\u2080 ?";

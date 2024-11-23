@@ -13,8 +13,8 @@ namespace Suites_Numériques
     public partial class Interface_InitialisationJeu : Form
     {
         bool chrono = false;
-        internal joueur joueur1;
-        internal joueur joueur2;
+        joueur joueur1;
+        joueur joueur2;
         int tour = 1; // 1 pour le joueur 1, 2 pour le joueur 2
         int question = 1;
         int nbQuestions = 6;
@@ -130,7 +130,7 @@ namespace Suites_Numériques
             // Fait appel à Interface_Jeu pour chaque question
             MessageBox.Show($"{joueur.Pseudo}, c'est à vous !", "Prêt ?", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            Interface_Jeu jeu = new Interface_Jeu(joueur, QuestionNum, chrono, suite);
+            Interface_Jeu jeu = new Interface_Jeu(joueur,tour, QuestionNum, chrono, suite);
             jeu.ShowDialog();
         }
     }

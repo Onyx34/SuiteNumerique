@@ -34,6 +34,11 @@
             this.label_points = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage = new System.Windows.Forms.TabPage();
+            this.groupBox_monotonie = new System.Windows.Forms.GroupBox();
+            this.radioBtn_Décroissante = new System.Windows.Forms.RadioButton();
+            this.radioBtn_Constante = new System.Windows.Forms.RadioButton();
+            this.radioBtn_Croissante = new System.Windows.Forms.RadioButton();
+            this.radioBtn_NonMonotone = new System.Windows.Forms.RadioButton();
             this.textBox_reponse2 = new System.Windows.Forms.TextBox();
             this.label_reponse2 = new System.Windows.Forms.Label();
             this.textBox_reponse1 = new System.Windows.Forms.TextBox();
@@ -42,11 +47,6 @@
             this.label_enonce = new System.Windows.Forms.Label();
             this.label_enonce2 = new System.Windows.Forms.Label();
             this.label_enonce1 = new System.Windows.Forms.Label();
-            this.groupBox_monotonie = new System.Windows.Forms.GroupBox();
-            this.radioBtn_Décroissante = new System.Windows.Forms.RadioButton();
-            this.radioBtn_Constante = new System.Windows.Forms.RadioButton();
-            this.radioBtn_Croissante = new System.Windows.Forms.RadioButton();
-            this.radioBtn_NonMonotone = new System.Windows.Forms.RadioButton();
             this.btn_valider = new System.Windows.Forms.Button();
             this.button_passer = new System.Windows.Forms.Button();
             this.button_scores = new System.Windows.Forms.Button();
@@ -112,7 +112,6 @@
             // 
             // tabPage
             // 
-            this.tabPage.Controls.Add(this.groupBox_monotonie);
             this.tabPage.Controls.Add(this.textBox_reponse2);
             this.tabPage.Controls.Add(this.label_reponse2);
             this.tabPage.Controls.Add(this.textBox_reponse1);
@@ -121,6 +120,7 @@
             this.tabPage.Controls.Add(this.label_enonce);
             this.tabPage.Controls.Add(this.label_enonce2);
             this.tabPage.Controls.Add(this.label_enonce1);
+            this.tabPage.Controls.Add(this.groupBox_monotonie);
             this.tabPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage.Location = new System.Drawing.Point(4, 29);
             this.tabPage.Name = "tabPage";
@@ -129,6 +129,66 @@
             this.tabPage.TabIndex = 0;
             this.tabPage.Text = "Question N° 1/6";
             this.tabPage.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_monotonie
+            // 
+            this.groupBox_monotonie.Controls.Add(this.radioBtn_Décroissante);
+            this.groupBox_monotonie.Controls.Add(this.radioBtn_Constante);
+            this.groupBox_monotonie.Controls.Add(this.radioBtn_Croissante);
+            this.groupBox_monotonie.Controls.Add(this.radioBtn_NonMonotone);
+            this.groupBox_monotonie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_monotonie.Location = new System.Drawing.Point(17, 186);
+            this.groupBox_monotonie.Name = "groupBox_monotonie";
+            this.groupBox_monotonie.Size = new System.Drawing.Size(393, 69);
+            this.groupBox_monotonie.TabIndex = 41;
+            this.groupBox_monotonie.TabStop = false;
+            // 
+            // radioBtn_Décroissante
+            // 
+            this.radioBtn_Décroissante.AutoSize = true;
+            this.radioBtn_Décroissante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtn_Décroissante.Location = new System.Drawing.Point(187, 39);
+            this.radioBtn_Décroissante.Name = "radioBtn_Décroissante";
+            this.radioBtn_Décroissante.Size = new System.Drawing.Size(194, 24);
+            this.radioBtn_Décroissante.TabIndex = 3;
+            this.radioBtn_Décroissante.TabStop = true;
+            this.radioBtn_Décroissante.Text = "Monotone décroissante";
+            this.radioBtn_Décroissante.UseVisualStyleBackColor = true;
+            // 
+            // radioBtn_Constante
+            // 
+            this.radioBtn_Constante.AutoSize = true;
+            this.radioBtn_Constante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtn_Constante.Location = new System.Drawing.Point(187, 14);
+            this.radioBtn_Constante.Name = "radioBtn_Constante";
+            this.radioBtn_Constante.Size = new System.Drawing.Size(174, 24);
+            this.radioBtn_Constante.TabIndex = 2;
+            this.radioBtn_Constante.Text = "Monotone constante";
+            this.radioBtn_Constante.UseVisualStyleBackColor = true;
+            // 
+            // radioBtn_Croissante
+            // 
+            this.radioBtn_Croissante.AutoSize = true;
+            this.radioBtn_Croissante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtn_Croissante.Location = new System.Drawing.Point(6, 39);
+            this.radioBtn_Croissante.Name = "radioBtn_Croissante";
+            this.radioBtn_Croissante.Size = new System.Drawing.Size(176, 24);
+            this.radioBtn_Croissante.TabIndex = 1;
+            this.radioBtn_Croissante.TabStop = true;
+            this.radioBtn_Croissante.Text = "Monotone croissante";
+            this.radioBtn_Croissante.UseVisualStyleBackColor = true;
+            // 
+            // radioBtn_NonMonotone
+            // 
+            this.radioBtn_NonMonotone.AutoSize = true;
+            this.radioBtn_NonMonotone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtn_NonMonotone.Location = new System.Drawing.Point(6, 14);
+            this.radioBtn_NonMonotone.Name = "radioBtn_NonMonotone";
+            this.radioBtn_NonMonotone.Size = new System.Drawing.Size(132, 24);
+            this.radioBtn_NonMonotone.TabIndex = 0;
+            this.radioBtn_NonMonotone.TabStop = true;
+            this.radioBtn_NonMonotone.Text = "Non monotone";
+            this.radioBtn_NonMonotone.UseVisualStyleBackColor = true;
             // 
             // textBox_reponse2
             // 
@@ -205,66 +265,6 @@
             this.label_enonce1.Size = new System.Drawing.Size(113, 20);
             this.label_enonce1.TabIndex = 16;
             this.label_enonce1.Text = "label_enonce1";
-            // 
-            // groupBox_monotonie
-            // 
-            this.groupBox_monotonie.Controls.Add(this.radioBtn_Décroissante);
-            this.groupBox_monotonie.Controls.Add(this.radioBtn_Constante);
-            this.groupBox_monotonie.Controls.Add(this.radioBtn_Croissante);
-            this.groupBox_monotonie.Controls.Add(this.radioBtn_NonMonotone);
-            this.groupBox_monotonie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_monotonie.Location = new System.Drawing.Point(17, 186);
-            this.groupBox_monotonie.Name = "groupBox_monotonie";
-            this.groupBox_monotonie.Size = new System.Drawing.Size(393, 69);
-            this.groupBox_monotonie.TabIndex = 41;
-            this.groupBox_monotonie.TabStop = false;
-            // 
-            // radioBtn_Décroissante
-            // 
-            this.radioBtn_Décroissante.AutoSize = true;
-            this.radioBtn_Décroissante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtn_Décroissante.Location = new System.Drawing.Point(187, 39);
-            this.radioBtn_Décroissante.Name = "radioBtn_Décroissante";
-            this.radioBtn_Décroissante.Size = new System.Drawing.Size(194, 24);
-            this.radioBtn_Décroissante.TabIndex = 3;
-            this.radioBtn_Décroissante.TabStop = true;
-            this.radioBtn_Décroissante.Text = "Monotone décroissante";
-            this.radioBtn_Décroissante.UseVisualStyleBackColor = true;
-            // 
-            // radioBtn_Constante
-            // 
-            this.radioBtn_Constante.AutoSize = true;
-            this.radioBtn_Constante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtn_Constante.Location = new System.Drawing.Point(187, 14);
-            this.radioBtn_Constante.Name = "radioBtn_Constante";
-            this.radioBtn_Constante.Size = new System.Drawing.Size(174, 24);
-            this.radioBtn_Constante.TabIndex = 2;
-            this.radioBtn_Constante.Text = "Monotone constante";
-            this.radioBtn_Constante.UseVisualStyleBackColor = true;
-            // 
-            // radioBtn_Croissante
-            // 
-            this.radioBtn_Croissante.AutoSize = true;
-            this.radioBtn_Croissante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtn_Croissante.Location = new System.Drawing.Point(6, 39);
-            this.radioBtn_Croissante.Name = "radioBtn_Croissante";
-            this.radioBtn_Croissante.Size = new System.Drawing.Size(176, 24);
-            this.radioBtn_Croissante.TabIndex = 1;
-            this.radioBtn_Croissante.TabStop = true;
-            this.radioBtn_Croissante.Text = "Monotone croissante";
-            this.radioBtn_Croissante.UseVisualStyleBackColor = true;
-            // 
-            // radioBtn_NonMonotone
-            // 
-            this.radioBtn_NonMonotone.AutoSize = true;
-            this.radioBtn_NonMonotone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtn_NonMonotone.Location = new System.Drawing.Point(6, 14);
-            this.radioBtn_NonMonotone.Name = "radioBtn_NonMonotone";
-            this.radioBtn_NonMonotone.Size = new System.Drawing.Size(132, 24);
-            this.radioBtn_NonMonotone.TabIndex = 0;
-            this.radioBtn_NonMonotone.TabStop = true;
-            this.radioBtn_NonMonotone.Text = "Non monotone";
-            this.radioBtn_NonMonotone.UseVisualStyleBackColor = true;
             // 
             // btn_valider
             // 
