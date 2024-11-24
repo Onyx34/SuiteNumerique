@@ -13,8 +13,8 @@ namespace Suites_Numériques
     public partial class Interface_InitialisationJeu : Form
     {
         bool chrono = false;
-        joueur joueur1;
-        joueur joueur2;
+        internal joueur joueur1;
+        internal joueur joueur2;
         int tour = 1; // 1 pour le joueur 1, 2 pour le joueur 2
         int question = 1;
         int nbQuestions = 6;

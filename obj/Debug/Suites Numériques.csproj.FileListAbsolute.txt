@@ -49,3 +49,4 @@ C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques
 C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.exe
 C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.pdb
 C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_InitialisationJeu.resources
+C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_InitialisationJeu.resources

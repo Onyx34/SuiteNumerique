@@ -202,7 +202,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Interface_InitialisationJeu";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Interface_InitialisationJeu";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
