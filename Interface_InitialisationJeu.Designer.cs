@@ -207,7 +207,7 @@
             this.Name = "Interface_InitialisationJeu";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Interface_InitialisationJeu";
+            this.Text = "Jeu : Initialisation de la partie";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

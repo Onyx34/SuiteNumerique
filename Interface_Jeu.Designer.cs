@@ -51,6 +51,7 @@
             this.button_passer = new System.Windows.Forms.Button();
             this.button_scores = new System.Windows.Forms.Button();
             this.button_regles = new System.Windows.Forms.Button();
+            this.label_chrono = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPage.SuspendLayout();
             this.groupBox_monotonie.SuspendLayout();
@@ -275,6 +276,7 @@
             this.btn_valider.TabIndex = 24;
             this.btn_valider.Text = "Valider";
             this.btn_valider.UseVisualStyleBackColor = true;
+            this.btn_valider.Click += new System.EventHandler(this.btn_valider_Click);
             // 
             // button_passer
             // 
@@ -285,6 +287,7 @@
             this.button_passer.TabIndex = 25;
             this.button_passer.Text = "Passer la question...";
             this.button_passer.UseVisualStyleBackColor = true;
+            this.button_passer.Click += new System.EventHandler(this.button_passer_Click);
             // 
             // button_scores
             // 
@@ -295,6 +298,7 @@
             this.button_scores.TabIndex = 26;
             this.button_scores.Text = "Scores";
             this.button_scores.UseVisualStyleBackColor = true;
+            this.button_scores.Click += new System.EventHandler(this.button_scores_Click);
             // 
             // button_regles
             // 
@@ -305,12 +309,25 @@
             this.button_regles.TabIndex = 27;
             this.button_regles.Text = "Règles";
             this.button_regles.UseVisualStyleBackColor = true;
+            this.button_regles.Click += new System.EventHandler(this.button_regles_Click);
+            // 
+            // label_chrono
+            // 
+            this.label_chrono.AutoSize = true;
+            this.label_chrono.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_chrono.ForeColor = System.Drawing.Color.Red;
+            this.label_chrono.Location = new System.Drawing.Point(379, 38);
+            this.label_chrono.Name = "label_chrono";
+            this.label_chrono.Size = new System.Drawing.Size(396, 31);
+            this.label_chrono.TabIndex = 44;
+            this.label_chrono.Text = "Attention !! Le temps passe !!";
             // 
             // Interface_Jeu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_chrono);
             this.Controls.Add(this.button_regles);
             this.Controls.Add(this.button_scores);
             this.Controls.Add(this.button_passer);
@@ -325,7 +342,7 @@
             this.Name = "Interface_Jeu";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Interface_Jeu";
+            this.Text = "Jeu";
             this.tabControl.ResumeLayout(false);
             this.tabPage.ResumeLayout(false);
             this.tabPage.PerformLayout();
@@ -361,5 +378,6 @@
         private System.Windows.Forms.Button button_passer;
         private System.Windows.Forms.Button button_scores;
         private System.Windows.Forms.Button button_regles;
+        private System.Windows.Forms.Label label_chrono;
     }
 }
