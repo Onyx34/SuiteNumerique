@@ -137,7 +137,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(263, 20);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Séléctionner le type de suite du jeu :";
+            this.label6.Text = "Sélectionner le type de suite du jeu :";
             // 
             // groupBox1
             // 
