@@ -15,7 +15,7 @@ namespace Suites_Numériques
         // Attributs
         suite_arithmetique suiteArithmetique;
         suite_geometrique suiteGeometrique;
-        List<RadioButton> Bouttons = new List<RadioButton>(4);
+        List<RadioButton> Boutons = new List<RadioButton>(4);
         joueur joueur1;
         joueur joueur2;
         int rang;
@@ -40,13 +40,13 @@ namespace Suites_Numériques
             joueur1 = LeJoueur1;
             joueur2 = LeJoueur2;
 
-            // Inititalisation des champs de linterface
-            Bouttons.Add(radioBtn_NonMonotone);
-            Bouttons.Add(radioBtn_Croissante);
-            Bouttons.Add(radioBtn_Décroissante);
-            Bouttons.Add(radioBtn_Constante);
+            // Initialisation des champs de l'interface
+            Boutons.Add(radioBtn_NonMonotone);
+            Boutons.Add(radioBtn_Croissante);
+            Boutons.Add(radioBtn_Décroissante);
+            Boutons.Add(radioBtn_Constante);
 
-            foreach (RadioButton btn in Bouttons)
+            foreach (RadioButton btn in Boutons)
             {
                 btn.Checked = false;
             }
@@ -57,7 +57,7 @@ namespace Suites_Numériques
             {
                 label_joueur.Text = "Joueur 1 :";
                 label_nom.Text = joueur1.Pseudo;
-                label_score.Text = $"Score : {joueur1.Score.ToString()}";
+                label_score.Text = $"{joueur1.Score.ToString()}";
                 label_score.ForeColor = Color.Red;
                 label_nom.ForeColor = Color.Red;
             }
@@ -65,13 +65,13 @@ namespace Suites_Numériques
             {
                 label_joueur.Text = "Joueur 2 :";
                 label_nom.Text = joueur2.Pseudo;
-                label_score.Text = $"Score : {joueur2.Score.ToString()}";
+                label_score.Text = $"{joueur2.Score.ToString()}";
                 label_score.ForeColor = Color.Blue;
                 label_nom.ForeColor = Color.Blue;
             }
             tabPage.Text = $"Question N°{question}/6";
 
-            // Appeel de la méthode pour initialiser la question en fonction du numéro de la question
+            // Appel de la méthode pour initialiser la question en fonction du numéro de la question
             switch (question)
             {
                 case 1:
@@ -134,7 +134,7 @@ namespace Suites_Numériques
                 label_enonce2.Text = $"r : {suiteGeometrique.Raison}";
             }
 
-            label_question.Text = $"Quel est la valeur du terme de rang {rang}";
+            label_question.Text = $"Quel est la valeur du terme de rang {rang} ?";
             label_reponse1.Text = "Réponse :";
 
         }
@@ -284,7 +284,7 @@ namespace Suites_Numériques
 
         private void btn_valider_Click(object sender, EventArgs e)
         {
-            // Envois la réponse à la méthode de vérification en fonction du numéro de la question
+            // Envoie la réponse à la méthode de vérification en fonction du numéro de la question
             string reponse = "";
             string solution = "";
 
@@ -360,7 +360,7 @@ namespace Suites_Numériques
                     }
 
                     // On cherche le bouton sélectionné
-                    foreach (RadioButton btn in Bouttons)
+                    foreach (RadioButton btn in Boutons)
                     {
                         if (btn.Checked)
                         {
@@ -378,7 +378,7 @@ namespace Suites_Numériques
 
         private void button_passer_Click(object sender, EventArgs e)
         {
-            // Ferme simplement le formulaire sans ajouter ou sousstraire de points
+            // Ferme simplement le formulaire sans ajouter ou soustraire de points
             this.Close();
         }
 
@@ -455,13 +455,13 @@ namespace Suites_Numériques
 
         private void button_regles_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("- Le Jeu se joue à deux joueurs à tour de rôle avec 6 questions par parties\n" +
-                "- A chaque tour, un calcul de même nature sur les suites est demandé\n" +
-                "- Lors d'un tour, le joueur peut valider une réponse ou passer la question\n" +
-                "- Si le joueur valide une réponse, il gagne un point pour une réponse correcte, il perd un point pour une réponse incorrecte\n" +
-                "- Si le joueur passe la question, ses points ne sont pas modifiés\n" +
-                "- Le jeu peut se jouer avec ou sans contrainte de temps\n" +
-                "- Si la contrainte temps est activé alors le joueur se voit attribuer des points supplémentaires lors d'une bonne réponse rapide",
+            MessageBox.Show("- Le Jeu se joue à deux joueurs à tour de rôle avec 6 questions par parties\n\n" +
+                "- A chaque tour, un calcul de même nature sur les suites est demandé\n\n" +
+                "- Lors d'un tour, le joueur peut valider une réponse ou passer la question\n\n" +
+                "- Si le joueur valide une réponse, il gagne un point pour une réponse correcte, il perd un point pour une réponse incorrecte\n\n" +
+                "- Si le joueur passe la question, ses points ne sont pas modifiés\n\n" +
+                "- Le jeu peut se jouer avec ou sans contrainte de temps\n\n" +
+                "- Si la contrainte temps est activée alors le joueur se voit attribuer des points supplémentaires lors d'une bonne réponse rapide",
                 "Jeu : Règles du jeu",
                 MessageBoxButtons.OK);
         }

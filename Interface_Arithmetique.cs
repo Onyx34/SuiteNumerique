@@ -14,7 +14,7 @@ namespace Suites_Numériques
     public partial class Interface_Arithmetique : Form
     {
         suite_arithmetique suite;
-        List<RadioButton> Bouttons = new List<RadioButton>(4);
+        List<RadioButton> Boutons = new List<RadioButton>(4);
         int rang_terme;
         int rang_premierTerme;
         int rang_rang;
@@ -26,10 +26,10 @@ namespace Suites_Numériques
         {
             InitializeComponent();
             nouvelle_suite();
-            Bouttons.Add(radioBtn_NonMonotone);
-            Bouttons.Add(radioBtn_Croissante);
-            Bouttons.Add(radioBtn_Décroissante);
-            Bouttons.Add(radioBtn_Constante);
+            Boutons.Add(radioBtn_NonMonotone);
+            Boutons.Add(radioBtn_Croissante);
+            Boutons.Add(radioBtn_Décroissante);
+            Boutons.Add(radioBtn_Constante);
         }
 
         private void btn_nouvelle_terme_Click(object sender, EventArgs e)
@@ -107,7 +107,7 @@ namespace Suites_Numériques
             string reponse = "";
 
             // On cherche le bouton sélectionné
-            foreach (RadioButton btn in Bouttons)
+            foreach (RadioButton btn in Boutons)
             {
                 if (btn.Checked)
                 {
@@ -129,7 +129,7 @@ namespace Suites_Numériques
             //  Fonction pour initialiser des suites,
             //  instancie un nouvel objet suite et choisi aléatoirement des termes pour les différentes questions
 
-            // Initialisation des vleurs
+            // Initialisation des valeurs
             suite = new suite_arithmetique();
 
             rang_terme = Program.GenererAleatoire(1, 16);
@@ -176,7 +176,7 @@ namespace Suites_Numériques
             // Permet de mettre à jour les champs de l'onglet Rang
             label_U0_rang.Text = $"U\u2080 : {suite.Premier}";
             label_r_rang.Text = $"r : {suite.Raison}";
-            label_question_rang.Text = $"Quelle est le rang du terme de valeur {suite.TermeDeRang(rang_rang)} ?";
+            label_question_rang.Text = $"Quel est le rang du terme de valeur {suite.TermeDeRang(rang_rang)} ?";
             label_verif_rang.Text = "";
             textBox_reponse_rang.Text = "";
         }
@@ -213,7 +213,7 @@ namespace Suites_Numériques
             label_r_monotonie.Text = $"r : {suite.Raison}";
             label_question_monotonie.Text = "Quel est la monotonie de la suite ?";
             label_verif_monotonie.Text = "";
-            foreach (RadioButton btn in Bouttons)
+            foreach (RadioButton btn in Boutons)
             {
                 btn.Checked = false;
             }

@@ -81,7 +81,7 @@
             this.textBox_pseudo1.Location = new System.Drawing.Point(139, 78);
             this.textBox_pseudo1.Name = "textBox_pseudo1";
             this.textBox_pseudo1.Size = new System.Drawing.Size(244, 26);
-            this.textBox_pseudo1.TabIndex = 3;
+            this.textBox_pseudo1.TabIndex = 1;
             // 
             // textBox_pseudo2
             // 
@@ -89,7 +89,7 @@
             this.textBox_pseudo2.Location = new System.Drawing.Point(139, 119);
             this.textBox_pseudo2.Name = "textBox_pseudo2";
             this.textBox_pseudo2.Size = new System.Drawing.Size(244, 26);
-            this.textBox_pseudo2.TabIndex = 4;
+            this.textBox_pseudo2.TabIndex = 3;
             // 
             // textBox_mdp1
             // 
@@ -97,7 +97,7 @@
             this.textBox_mdp1.Location = new System.Drawing.Point(508, 78);
             this.textBox_mdp1.Name = "textBox_mdp1";
             this.textBox_mdp1.Size = new System.Drawing.Size(284, 26);
-            this.textBox_mdp1.TabIndex = 5;
+            this.textBox_mdp1.TabIndex = 2;
             this.textBox_mdp1.UseSystemPasswordChar = true;
             // 
             // textBox_mdp2
@@ -106,7 +106,7 @@
             this.textBox_mdp2.Location = new System.Drawing.Point(508, 116);
             this.textBox_mdp2.Name = "textBox_mdp2";
             this.textBox_mdp2.Size = new System.Drawing.Size(284, 26);
-            this.textBox_mdp2.TabIndex = 6;
+            this.textBox_mdp2.TabIndex = 4;
             this.textBox_mdp2.UseSystemPasswordChar = true;
             // 
             // label4
@@ -157,7 +157,7 @@
             this.radioBtn_geometrique.Location = new System.Drawing.Point(219, 25);
             this.radioBtn_geometrique.Name = "radioBtn_geometrique";
             this.radioBtn_geometrique.Size = new System.Drawing.Size(120, 24);
-            this.radioBtn_geometrique.TabIndex = 2;
+            this.radioBtn_geometrique.TabIndex = 6;
             this.radioBtn_geometrique.Text = "Géométrique";
             this.radioBtn_geometrique.UseVisualStyleBackColor = true;
             // 
@@ -169,7 +169,7 @@
             this.radioBtn_arithmetique.Location = new System.Drawing.Point(24, 25);
             this.radioBtn_arithmetique.Name = "radioBtn_arithmetique";
             this.radioBtn_arithmetique.Size = new System.Drawing.Size(117, 24);
-            this.radioBtn_arithmetique.TabIndex = 0;
+            this.radioBtn_arithmetique.TabIndex = 5;
             this.radioBtn_arithmetique.TabStop = true;
             this.radioBtn_arithmetique.Text = "Arithmétique";
             this.radioBtn_arithmetique.UseVisualStyleBackColor = true;
@@ -180,7 +180,7 @@
             this.btn_ok.Location = new System.Drawing.Point(330, 351);
             this.btn_ok.Name = "btn_ok";
             this.btn_ok.Size = new System.Drawing.Size(111, 41);
-            this.btn_ok.TabIndex = 37;
+            this.btn_ok.TabIndex = 7;
             this.btn_ok.Text = "OK";
             this.btn_ok.UseVisualStyleBackColor = true;
             this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);

@@ -13,7 +13,7 @@ namespace Suites_Numériques
     public partial class Interface_Geometrique : Form
     {
         suite_geometrique suite;
-        List<RadioButton> Bouttons = new List<RadioButton>(4);
+        List<RadioButton> Boutons = new List<RadioButton>(4);
         int rang_terme;
         int rang_premierTerme;
         int rang_rang;
@@ -25,10 +25,10 @@ namespace Suites_Numériques
         {
             InitializeComponent();
             nouvelle_suite();
-            Bouttons.Add(radioBtn_NonMonotone);
-            Bouttons.Add(radioBtn_Croissante);
-            Bouttons.Add(radioBtn_Décroissante);
-            Bouttons.Add(radioBtn_Constante);
+            Boutons.Add(radioBtn_NonMonotone);
+            Boutons.Add(radioBtn_Croissante);
+            Boutons.Add(radioBtn_Décroissante);
+            Boutons.Add(radioBtn_Constante);
         }
 
         private void btn_nouvelle_terme_Click(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace Suites_Numériques
             string reponse = "";
 
             // On cherche le bouton sélectionné
-            foreach (RadioButton btn in Bouttons)
+            foreach (RadioButton btn in Boutons)
             {
                 if (btn.Checked)
                 {
@@ -175,7 +175,7 @@ namespace Suites_Numériques
             // Permet de mettre à jour les champs de l'onglet Rang
             label_U0_rang.Text = $"U\u2080 : {suite.Premier}";
             label_r_rang.Text = $"r : {suite.Raison}";
-            label_question_rang.Text = $"Quelle est le rang du terme de valeur {suite.TermeDeRang(rang_rang)} ?";
+            label_question_rang.Text = $"Quel est le rang du terme de valeur {suite.TermeDeRang(rang_rang)} ?";
             label_verif_rang.Text = "";
             textBox_reponse_rang.Text = "";
         }
@@ -183,7 +183,7 @@ namespace Suites_Numériques
         private void MaJ_raison()
         {
             // Permet de mettre à jour les champs de l'onglet raison
-            // Problème ebn cas de plusieur possiblité de réponse ? Ex : raison négative ou null
+            // Problème en cas de plusieur possiblité de réponse ? Ex : raison négative ou null
             label_information_raison.Text = $"Soit la suite géométrique (Uₙ) définie par les termes U{Program.MettreEnIndice(rang_raison1)} et U{Program.MettreEnIndice(rang_raison2)}";
             label_U1_raison.Text = $"U{Program.MettreEnIndice(rang_raison1)} : {suite.TermeDeRang(rang_raison1)}";
             label_U2_raison.Text = $"U{Program.MettreEnIndice(rang_raison2)} : {suite.TermeDeRang(rang_raison2)}";
@@ -213,7 +213,7 @@ namespace Suites_Numériques
             label_r_monotonie.Text = $"r : {suite.Raison}";
             label_question_monotonie.Text = "Quelle est la monotonie de la suite ?";
             label_verif_monotonie.Text = "";
-            foreach (RadioButton btn in Bouttons)
+            foreach (RadioButton btn in Boutons)
             {
                 btn.Checked = false;
             }

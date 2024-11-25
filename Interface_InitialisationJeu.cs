@@ -49,8 +49,13 @@ namespace Suites_Numériques
             pseudo2 = pseudo2.Trim();
             pseudo2 = pseudo2.Replace(' ', '_');
             pseudo2 = pseudo2.Replace('\t', '_');
+            if (pseudo1 == pseudo2)
+            {
+                MessageBox.Show("Les pseudos ne peuvent pas être identiques", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string mdp2 = textBox_mdp2.Text;
-            if (mdp2.Contains('\t')) //Contrôle pour ne pas qu'il y ai de tabulation dans le mot de passe
+            if (mdp2.Contains('\t')) //Contrôle pour ne pas qu'il n'y ai pas de tabulation dans le mot de passe
             {
                 MessageBox.Show("Le mot de passe ne doit pas contenir de tabulation", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -98,6 +103,11 @@ namespace Suites_Numériques
                         MessageBox.Show("Erreur d'authentification pour le joueur 2", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+            }
+            else
+            {
+                // Dans le cas où il n'y a pas de chrono, on ne vérifie pas les mots de passes car on ne les enregistre pas les scores
+                JouerPartie();
             }
 
 
