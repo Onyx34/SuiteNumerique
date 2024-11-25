@@ -867,7 +867,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Geometrique";
+            this.Text = "Suites Géométrique : Rechercher...";
             this.tabPage_UnTerme.ResumeLayout(false);
             this.tabPage_UnTerme.PerformLayout();
             this.tabControl.ResumeLayout(false);
