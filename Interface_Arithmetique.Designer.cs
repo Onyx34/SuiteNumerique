@@ -198,9 +198,9 @@
             this.label_information_terme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_information_terme.Location = new System.Drawing.Point(8, 68);
             this.label_information_terme.Name = "label_information_terme";
-            this.label_information_terme.Size = new System.Drawing.Size(465, 20);
+            this.label_information_terme.Size = new System.Drawing.Size(464, 20);
             this.label_information_terme.TabIndex = 9;
-            this.label_information_terme.Text = "Soit la suite géométrique (Uₙ) de premier terme U₀ et de raison r :";
+            this.label_information_terme.Text = "Soit la suite arithmétique (Uₙ) de premier terme U₀ et de raison r :";
             // 
             // label_r_terme
             // 
@@ -308,9 +308,9 @@
             this.label_information_premierTerme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_information_premierTerme.Location = new System.Drawing.Point(8, 68);
             this.label_information_premierTerme.Name = "label_information_premierTerme";
-            this.label_information_premierTerme.Size = new System.Drawing.Size(465, 20);
+            this.label_information_premierTerme.Size = new System.Drawing.Size(464, 20);
             this.label_information_premierTerme.TabIndex = 19;
-            this.label_information_premierTerme.Text = "Soit la suite géométrique (Uₙ) de premier terme U₀ et de raison r :";
+            this.label_information_premierTerme.Text = "Soit la suite arithmétique (Uₙ) de premier terme U₀ et de raison r :";
             // 
             // label_r_premierTerme
             // 
@@ -418,9 +418,9 @@
             this.label_information_rang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_information_rang.Location = new System.Drawing.Point(8, 68);
             this.label_information_rang.Name = "label_information_rang";
-            this.label_information_rang.Size = new System.Drawing.Size(465, 20);
+            this.label_information_rang.Size = new System.Drawing.Size(464, 20);
             this.label_information_rang.TabIndex = 27;
-            this.label_information_rang.Text = "Soit la suite géométrique (Uₙ) de premier terme U₀ et de raison r :";
+            this.label_information_rang.Text = "Soit la suite arithmétique (Uₙ) de premier terme U₀ et de raison r :";
             // 
             // label_r_rang
             // 
@@ -548,9 +548,9 @@
             this.label_information_raison.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_information_raison.Location = new System.Drawing.Point(8, 68);
             this.label_information_raison.Name = "label_information_raison";
-            this.label_information_raison.Size = new System.Drawing.Size(465, 20);
+            this.label_information_raison.Size = new System.Drawing.Size(464, 20);
             this.label_information_raison.TabIndex = 27;
-            this.label_information_raison.Text = "Soit la suite géométrique (Uₙ) de premier terme U₀ et de raison r :";
+            this.label_information_raison.Text = "Soit la suite arithmétique (Uₙ) de premier terme U₀ et de raison r :";
             // 
             // label_U2_raison
             // 
@@ -659,9 +659,9 @@
             this.label_information_somme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_information_somme.Location = new System.Drawing.Point(8, 68);
             this.label_information_somme.Name = "label_information_somme";
-            this.label_information_somme.Size = new System.Drawing.Size(465, 20);
+            this.label_information_somme.Size = new System.Drawing.Size(464, 20);
             this.label_information_somme.TabIndex = 27;
-            this.label_information_somme.Text = "Soit la suite géométrique (Uₙ) de premier terme U₀ et de raison r :";
+            this.label_information_somme.Text = "Soit la suite arithmétique (Uₙ) de premier terme U₀ et de raison r :";
             // 
             // label_r_somme
             // 
@@ -821,9 +821,9 @@
             this.label_information_monotonie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_information_monotonie.Location = new System.Drawing.Point(8, 68);
             this.label_information_monotonie.Name = "label_information_monotonie";
-            this.label_information_monotonie.Size = new System.Drawing.Size(465, 20);
+            this.label_information_monotonie.Size = new System.Drawing.Size(464, 20);
             this.label_information_monotonie.TabIndex = 27;
-            this.label_information_monotonie.Text = "Soit la suite géométrique (Uₙ) de premier terme U₀ et de raison r :";
+            this.label_information_monotonie.Text = "Soit la suite arithmétique (Uₙ) de premier terme U₀ et de raison r :";
             // 
             // label_r_monotonie
             // 

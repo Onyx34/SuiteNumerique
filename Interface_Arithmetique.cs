@@ -189,7 +189,9 @@ namespace Suites_Numériques
             label_U2_raison.Text = $"U{Program.MettreEnIndice(rang_raison2)} : {suite.TermeDeRang(rang_raison2)}";
             label_question_raison.Text = "Quelles sont les valeurs de la raison r et du premier terme U\u2080 ?";
             label_reponseR_raison.Text = "r :";
+            textBox_reponseR_raison.Text = "";
             label_reponse_raison.Text = "U\u2080 :";
+            textBox_reponse_raison.Text = "";
             label_verif_raison.Text = "";
         }
 
@@ -200,6 +202,7 @@ namespace Suites_Numériques
             label_r_somme.Text = $"r : {suite.Raison}";
             label_question_somme.Text = $"Quelle est la somme des {rang_somme +1} premiers termes ?";
             label_reponse_somme.Text = $"S{Program.MettreEnIndice(rang_somme)} :";
+            textBox_reponse_somme.Text = "";
             label_verif_somme.Text = "";
         }
 
