@@ -49,6 +49,16 @@
             this.label_joueur8 = new System.Windows.Forms.Label();
             this.label_joueur9 = new System.Windows.Forms.Label();
             this.label_joueur10 = new System.Windows.Forms.Label();
+            this.label_score10 = new System.Windows.Forms.Label();
+            this.label_score9 = new System.Windows.Forms.Label();
+            this.label_score8 = new System.Windows.Forms.Label();
+            this.label_score7 = new System.Windows.Forms.Label();
+            this.label_score6 = new System.Windows.Forms.Label();
+            this.label_score5 = new System.Windows.Forms.Label();
+            this.label_score4 = new System.Windows.Forms.Label();
+            this.label_score3 = new System.Windows.Forms.Label();
+            this.label_score2 = new System.Windows.Forms.Label();
+            this.label_score1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -241,11 +251,111 @@
             this.label_joueur10.TabIndex = 20;
             this.label_joueur10.Text = "Label_joueur10";
             // 
+            // label_score10
+            // 
+            this.label_score10.AutoSize = true;
+            this.label_score10.Location = new System.Drawing.Point(672, 390);
+            this.label_score10.Name = "label_score10";
+            this.label_score10.Size = new System.Drawing.Size(108, 20);
+            this.label_score10.TabIndex = 30;
+            this.label_score10.Text = "label_score10";
+            // 
+            // label_score9
+            // 
+            this.label_score9.AutoSize = true;
+            this.label_score9.Location = new System.Drawing.Point(672, 360);
+            this.label_score9.Name = "label_score9";
+            this.label_score9.Size = new System.Drawing.Size(99, 20);
+            this.label_score9.TabIndex = 29;
+            this.label_score9.Text = "label_score9";
+            // 
+            // label_score8
+            // 
+            this.label_score8.AutoSize = true;
+            this.label_score8.Location = new System.Drawing.Point(672, 325);
+            this.label_score8.Name = "label_score8";
+            this.label_score8.Size = new System.Drawing.Size(99, 20);
+            this.label_score8.TabIndex = 28;
+            this.label_score8.Text = "label_score8";
+            // 
+            // label_score7
+            // 
+            this.label_score7.AutoSize = true;
+            this.label_score7.Location = new System.Drawing.Point(672, 290);
+            this.label_score7.Name = "label_score7";
+            this.label_score7.Size = new System.Drawing.Size(99, 20);
+            this.label_score7.TabIndex = 27;
+            this.label_score7.Text = "label_score7";
+            // 
+            // label_score6
+            // 
+            this.label_score6.AutoSize = true;
+            this.label_score6.Location = new System.Drawing.Point(672, 255);
+            this.label_score6.Name = "label_score6";
+            this.label_score6.Size = new System.Drawing.Size(99, 20);
+            this.label_score6.TabIndex = 26;
+            this.label_score6.Text = "label_score6";
+            // 
+            // label_score5
+            // 
+            this.label_score5.AutoSize = true;
+            this.label_score5.Location = new System.Drawing.Point(672, 220);
+            this.label_score5.Name = "label_score5";
+            this.label_score5.Size = new System.Drawing.Size(99, 20);
+            this.label_score5.TabIndex = 25;
+            this.label_score5.Text = "label_score5";
+            // 
+            // label_score4
+            // 
+            this.label_score4.AutoSize = true;
+            this.label_score4.Location = new System.Drawing.Point(672, 185);
+            this.label_score4.Name = "label_score4";
+            this.label_score4.Size = new System.Drawing.Size(99, 20);
+            this.label_score4.TabIndex = 24;
+            this.label_score4.Text = "label_score4";
+            // 
+            // label_score3
+            // 
+            this.label_score3.AutoSize = true;
+            this.label_score3.Location = new System.Drawing.Point(672, 150);
+            this.label_score3.Name = "label_score3";
+            this.label_score3.Size = new System.Drawing.Size(99, 20);
+            this.label_score3.TabIndex = 23;
+            this.label_score3.Text = "label_score3";
+            // 
+            // label_score2
+            // 
+            this.label_score2.AutoSize = true;
+            this.label_score2.Location = new System.Drawing.Point(672, 115);
+            this.label_score2.Name = "label_score2";
+            this.label_score2.Size = new System.Drawing.Size(99, 20);
+            this.label_score2.TabIndex = 22;
+            this.label_score2.Text = "label_score2";
+            // 
+            // label_score1
+            // 
+            this.label_score1.AutoSize = true;
+            this.label_score1.Location = new System.Drawing.Point(672, 80);
+            this.label_score1.Name = "label_score1";
+            this.label_score1.Size = new System.Drawing.Size(99, 20);
+            this.label_score1.TabIndex = 21;
+            this.label_score1.Text = "label_score1";
+            // 
             // Interface_MeilleurScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_score10);
+            this.Controls.Add(this.label_score9);
+            this.Controls.Add(this.label_score8);
+            this.Controls.Add(this.label_score7);
+            this.Controls.Add(this.label_score6);
+            this.Controls.Add(this.label_score5);
+            this.Controls.Add(this.label_score4);
+            this.Controls.Add(this.label_score3);
+            this.Controls.Add(this.label_score2);
+            this.Controls.Add(this.label_score1);
             this.Controls.Add(this.label_joueur10);
             this.Controls.Add(this.label_joueur9);
             this.Controls.Add(this.label_joueur8);
@@ -303,5 +413,15 @@
         private System.Windows.Forms.Label label_joueur8;
         private System.Windows.Forms.Label label_joueur9;
         private System.Windows.Forms.Label label_joueur10;
+        private System.Windows.Forms.Label label_score10;
+        private System.Windows.Forms.Label label_score9;
+        private System.Windows.Forms.Label label_score8;
+        private System.Windows.Forms.Label label_score7;
+        private System.Windows.Forms.Label label_score6;
+        private System.Windows.Forms.Label label_score5;
+        private System.Windows.Forms.Label label_score4;
+        private System.Windows.Forms.Label label_score3;
+        private System.Windows.Forms.Label label_score2;
+        private System.Windows.Forms.Label label_score1;
     }
 }

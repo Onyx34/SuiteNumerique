@@ -113,6 +113,7 @@
             this.menuStrip_Meilleurs_temps.Name = "menuStrip_Meilleurs_temps";
             this.menuStrip_Meilleurs_temps.Size = new System.Drawing.Size(103, 20);
             this.menuStrip_Meilleurs_temps.Text = "Meilleurs temps";
+            this.menuStrip_Meilleurs_temps.Click += new System.EventHandler(this.menuStrip_Meilleurs_temps_Click);
             // 
             // label_Acceuil
             // 

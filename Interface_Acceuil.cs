@@ -33,5 +33,11 @@ namespace Suites_Numériques
             Interface_InitialisationJeu initialisationJeu = new Interface_InitialisationJeu(true);
             initialisationJeu.ShowDialog();
         }
+
+        private void menuStrip_Meilleurs_temps_Click(object sender, EventArgs e)
+        {
+            Interface_MeilleurScore meilleurScore = new Interface_MeilleurScore();
+            meilleurScore.ShowDialog();
+        }
     }
 }

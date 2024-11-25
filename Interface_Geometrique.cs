@@ -127,7 +127,7 @@ namespace Suites_Numériques
             rang_terme = Program.GenererAleatoire(1, 8);
             rang_premierTerme = Program.GenererAleatoire(1, 8);
             rang_rang = Program.GenererAleatoire(1, 8);
-            rang_raison1 = Program.GenererAleatoire(1, 8);
+            rang_raison1 = Program.GenererAleatoire(1, 7);
             rang_raison2 = Program.GenererAleatoire(rang_raison1 + 1, 8);
             rang_somme = Program.GenererAleatoire(1, 8);
 

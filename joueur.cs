@@ -27,6 +27,43 @@ namespace Suites_Numériques
             score = LeScore;
         }
 
+        public joueur(int LeRang)
+        {
+            // Constructeur permmettant de créer un joueur à partir de son rang (score) dans le fichier joueurs.txt
+
+            int compteur = 0;
+            string nomFichier = "joueurs.txt";
+            StreamReader fichierLecture;
+            string[] ligne;
+            List<string[]> lignes = new List<string[]>(); // Utilisation d'une liste pour stocker les lignes
+            char delimiteur = '\t';
+
+            // Récupération de tous les joueurs dans un tableau à deux dimensions (pseudo, score)
+            fichierLecture = new StreamReader(nomFichier);
+            while (!fichierLecture.EndOfStream)
+            {
+                ligne = fichierLecture.ReadLine().Split(delimiteur);
+                lignes.Add(new string[] { ligne[0], ligne[2] });
+                compteur++;
+            }
+            fichierLecture.Close();
+
+            // Tri du tableau par score
+            lignes = lignes.OrderByDescending(l => int.Parse(l[1])).ToList();
+
+            // Assigner le pseudo et le score en fonction du rang
+            if (LeRang - 1 < lignes.Count)
+            {
+                pseudo = lignes[LeRang - 1][0];
+                score = int.Parse(lignes[LeRang - 1][1]);
+            }
+            else
+            {
+                pseudo = "Inconnu";
+                score = 0;
+            }
+        }
+
         // Accesseurs
         public string Pseudo
         {
