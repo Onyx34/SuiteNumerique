@@ -70,31 +70,33 @@ namespace Suites_Numériques
             // Contrôle des mots de passes
             bool authJoueur1 = joueur1.Authentification(mdp1);
             bool authJoueur2 = joueur2.Authentification(mdp2);
-
-            if (authJoueur1 && authJoueur2)
+            if (chrono)
             {
-                // Récupération du type de suite
-                if (radioBtn_arithmetique.Checked)
+                if (authJoueur1 && authJoueur2)
                 {
-                    suite = 0;
+                    // Récupération du type de suite
+                    if (radioBtn_arithmetique.Checked)
+                    {
+                        suite = 0;
+                    }
+                    else
+                    {
+                        suite = 1;
+                    }
+
+                    // Création d'une partie
+                    JouerPartie();
                 }
                 else
                 {
-                    suite = 1;
-                }
-
-                // Création d'une partie
-                JouerPartie();
-            }
-            else
-            {
-                if (!authJoueur1)
-                {
-                    MessageBox.Show("Erreur d'authentification pour le joueur 1", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                if (!authJoueur2)
-                {
-                    MessageBox.Show("Erreur d'authentification pour le joueur 2", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (!authJoueur1)
+                    {
+                        MessageBox.Show("Erreur d'authentification pour le joueur 1", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    if (!authJoueur2)
+                    {
+                        MessageBox.Show("Erreur d'authentification pour le joueur 2", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
 
@@ -132,7 +134,7 @@ namespace Suites_Numériques
             }
 
             // Affiche les scores
-            scores.ShowDialog();            
+            scores.ShowDialog();
             if (scores.DialogResult == DialogResult.OK)
             {
                 // Reset les scores pour relancer une partie

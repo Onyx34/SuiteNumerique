@@ -84,6 +84,7 @@ namespace Suites_Numériques
             // Ouvre puis parcour le fichier "joueurs.txt" pour vérifier si le joueur existe
             // Si le joueur existe, vérifie si le mot de passe est correct et renvois true ou false
             // Sinon , crée un nouveau joueur et renvois true
+            // Le score de base est de -6, le plus mauvais score possible
             VerifierExistanceFichier();
             // Initionalisation des variables
             string nomFichier = "joueurs.txt";
