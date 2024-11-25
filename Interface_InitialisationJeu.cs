@@ -38,7 +38,7 @@ namespace Suites_Numériques
             pseudo1 = pseudo1.Trim();
             pseudo1 = pseudo1.Replace('\t', '_');
             string mdp1 = textBox_mdp1.Text;
-            if (mdp1.Contains('\t')) //Contrôle pour ne pas qu'il y ai de tabulation dans le mot de passe
+            if (mdp1.Contains('\t')) //Contrôle pour ne pas qu'il n'y ai pas de tabulation dans le mot de passe
             {
                 MessageBox.Show("Le mot de passe ne doit pas contenir de tabulation", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -47,7 +47,6 @@ namespace Suites_Numériques
             // Récupération pseudo et mot de passe du joueur 2
             string pseudo2 = textBox_pseudo2.Text;
             pseudo2 = pseudo2.Trim();
-            pseudo2 = pseudo2.Replace(' ', '_');
             pseudo2 = pseudo2.Replace('\t', '_');
             if (pseudo1 == pseudo2)
             {
