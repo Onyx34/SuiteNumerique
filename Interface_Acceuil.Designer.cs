@@ -76,7 +76,7 @@
             // 
             this.toolStrip_Geometrique.Name = "toolStrip_Geometrique";
             this.toolStrip_Geometrique.Size = new System.Drawing.Size(202, 22);
-            this.toolStrip_Geometrique.Text = "Géométrique";
+            this.toolStrip_Geometrique.Text = "Géométriques";
             this.toolStrip_Geometrique.Click += new System.EventHandler(this.toolStrip_Geometrique_Click);
             // 
             // toolStrip_Quelconques
