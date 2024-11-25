@@ -270,9 +270,9 @@
             // btn_valider
             // 
             this.btn_valider.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_valider.Location = new System.Drawing.Point(16, 403);
+            this.btn_valider.Location = new System.Drawing.Point(16, 389);
             this.btn_valider.Name = "btn_valider";
-            this.btn_valider.Size = new System.Drawing.Size(95, 25);
+            this.btn_valider.Size = new System.Drawing.Size(95, 39);
             this.btn_valider.TabIndex = 24;
             this.btn_valider.Text = "Valider";
             this.btn_valider.UseVisualStyleBackColor = true;
@@ -281,9 +281,9 @@
             // button_passer
             // 
             this.button_passer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_passer.Location = new System.Drawing.Point(135, 403);
+            this.button_passer.Location = new System.Drawing.Point(135, 389);
             this.button_passer.Name = "button_passer";
-            this.button_passer.Size = new System.Drawing.Size(204, 25);
+            this.button_passer.Size = new System.Drawing.Size(204, 39);
             this.button_passer.TabIndex = 25;
             this.button_passer.Text = "Passer la question...";
             this.button_passer.UseVisualStyleBackColor = true;
@@ -292,9 +292,9 @@
             // button_scores
             // 
             this.button_scores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_scores.Location = new System.Drawing.Point(564, 403);
+            this.button_scores.Location = new System.Drawing.Point(564, 389);
             this.button_scores.Name = "button_scores";
-            this.button_scores.Size = new System.Drawing.Size(95, 25);
+            this.button_scores.Size = new System.Drawing.Size(95, 39);
             this.button_scores.TabIndex = 26;
             this.button_scores.Text = "Scores";
             this.button_scores.UseVisualStyleBackColor = true;
@@ -303,9 +303,9 @@
             // button_regles
             // 
             this.button_regles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_regles.Location = new System.Drawing.Point(679, 403);
+            this.button_regles.Location = new System.Drawing.Point(679, 389);
             this.button_regles.Name = "button_regles";
-            this.button_regles.Size = new System.Drawing.Size(95, 25);
+            this.button_regles.Size = new System.Drawing.Size(95, 39);
             this.button_regles.TabIndex = 27;
             this.button_regles.Text = "Règles";
             this.button_regles.UseVisualStyleBackColor = true;
