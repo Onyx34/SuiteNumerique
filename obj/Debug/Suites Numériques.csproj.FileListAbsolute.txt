@@ -50,3 +50,6 @@ C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques
 C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites Numériques.pdb
 C:\Users\fterral\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_InitialisationJeu.resources
 C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_InitialisationJeu.resources
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_InitialisationJeu.resources
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Jeu.resources
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Scores.resources

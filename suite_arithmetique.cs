@@ -16,6 +16,10 @@ namespace Suites_Numériques
         public suite_arithmetique() : base(Program.GenererAleatoire(-25, 25))
         {
             raison = Program.GenererAleatoire(-10, 10);
+            if (raison == 0)
+            {
+                raison = 1;
+            }
 
         }
 

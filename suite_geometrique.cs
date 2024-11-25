@@ -14,7 +14,7 @@ namespace Suites_Numériques
         // Constructeurs
         public suite_geometrique() : base(Program.GenererAleatoire(-8, 8))
         {
-            raison = Program.GenererAleatoire(-5, 5);
+            raison = Program.GenererAleatoire(1, 5);
         }
 
         public suite_geometrique(int LaRaison, int LePremier) : base(LePremier)
@@ -42,7 +42,15 @@ namespace Suites_Numériques
 
         public int SommeDesTermes(int rangLaSomme)
         {
-            return premier_terme * ((int)Math.Pow(raison, rangLaSomme + 1) - 1) / (raison - 1);
+            if (raison == 1)
+            {
+                return premier_terme * (rangLaSomme + 1);
+            }
+            else
+            {
+                return premier_terme * ((int)Math.Pow(raison, rangLaSomme + 1) - 1) / (raison - 1);
+            }
+
         }
 
         public string Monotonie()

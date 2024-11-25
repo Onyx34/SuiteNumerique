@@ -125,10 +125,10 @@ namespace Suites_Numériques
             suite = new suite_geometrique();
 
             rang_terme = Program.GenererAleatoire(1, 8);
-            rang_premierTerme = Program.GenererAleatoire(1, 8); // Les rangs peuvent être identiques, à gérer !
+            rang_premierTerme = Program.GenererAleatoire(1, 8);
             rang_rang = Program.GenererAleatoire(1, 8);
             rang_raison1 = Program.GenererAleatoire(1, 8);
-            rang_raison2 = Program.GenererAleatoire(1, 8);
+            rang_raison2 = Program.GenererAleatoire(rang_raison1 + 1, 8);
             rang_somme = Program.GenererAleatoire(1, 8);
 
             // Inversion de rang_raison1 et rang_raison2 si rang_raison1 > rang_raison2

@@ -133,10 +133,10 @@ namespace Suites_Numériques
             suite = new suite_arithmetique();
 
             rang_terme = Program.GenererAleatoire(1, 16);
-            rang_premierTerme = Program.GenererAleatoire(1, 16); // Les rangs peuvent être identiques, à gérer !
+            rang_premierTerme = Program.GenererAleatoire(1, 16);
             rang_rang = Program.GenererAleatoire(1, 16);
             rang_raison1 = Program.GenererAleatoire(1, 16);
-            rang_raison2 = Program.GenererAleatoire(1, 16);
+            rang_raison2 = Program.GenererAleatoire(rang_raison1 + 1, 16);
             rang_somme = Program.GenererAleatoire(1, 16);
 
 

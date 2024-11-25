@@ -58,12 +58,16 @@ namespace Suites_Numériques
                 label_joueur.Text = "Joueur 1 :";
                 label_nom.Text = joueur1.Pseudo;
                 label_score.Text = $"Score : {joueur1.Score.ToString()}";
+                label_score.ForeColor = Color.Red;
+                label_nom.ForeColor = Color.Red;
             }
             else
             {
                 label_joueur.Text = "Joueur 2 :";
                 label_nom.Text = joueur2.Pseudo;
                 label_score.Text = $"Score : {joueur2.Score.ToString()}";
+                label_score.ForeColor = Color.Blue;
+                label_nom.ForeColor = Color.Blue;
             }
             tabPage.Text = $"Question N°{question}/6";
 
@@ -202,7 +206,7 @@ namespace Suites_Numériques
             {
                 suiteArithmetique = new suite_arithmetique();
                 rang = Program.GenererAleatoire(1, 9);
-                rang2 = Program.GenererAleatoire(rang, 10);
+                rang2 = Program.GenererAleatoire(rang + 1, 10);
                 label_enonce.Text = $"Soit la suite arithmétique (Uₙ) définie par les termes U{Program.MettreEnIndice(rang)} et U{Program.MettreEnIndice(rang2)}";
                 label_enonce1.Text = $"U{Program.MettreEnIndice(rang)} : {suiteArithmetique.TermeDeRang(rang)}";
                 label_enonce2.Text = $"U{Program.MettreEnIndice(rang2)} : {suiteArithmetique.TermeDeRang(rang2)}";
@@ -211,7 +215,7 @@ namespace Suites_Numériques
             {
                 suiteGeometrique = new suite_geometrique();
                 rang = Program.GenererAleatoire(1, 4);
-                rang2 = Program.GenererAleatoire(rang, 5);
+                rang2 = Program.GenererAleatoire(rang + 1, 5);
                 label_enonce.Text = $"Soit la suite géométrique (Uₙ) définie par les termes U{Program.MettreEnIndice(rang)} et U{Program.MettreEnIndice(rang2)}";
                 label_enonce1.Text = $"U{Program.MettreEnIndice(rang)} : {suiteGeometrique.TermeDeRang(rang)}";
                 label_enonce2.Text = $"U{Program.MettreEnIndice(rang2)} : {suiteGeometrique.TermeDeRang(rang2)}";
@@ -394,7 +398,7 @@ namespace Suites_Numériques
             {
                 finChrono = DateTime.Now;
                 TimeSpan duree = finChrono - debutChrono;
-                int secondesEcoulees = (int)duree.Seconds;
+                int secondesEcoulees = (int)duree.TotalSeconds;
                 if (secondesEcoulees < 60)
                 {
                     pointsSupplementaire = 3;
@@ -421,11 +425,11 @@ namespace Suites_Numériques
                 }
                 if (chrono)
                 {
-                    MessageBox.Show("Résultat", $"Réponse correcte\nVous avez gagné {pointsSupplementaire} points supplémentaires pour le temps", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Réponse correcte\nVous avez gagné {pointsSupplementaire} points supplémentaires pour le temps", "Résultat", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Résultat", "Réponse correcte", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Réponse correcte", "Résultat", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }
@@ -439,7 +443,7 @@ namespace Suites_Numériques
                 {
                     joueur2.Score -= 1;
                 }
-                MessageBox.Show("Résltat", "Réponse incorrecte", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Réponse incorrecte", "Résultat", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             this.Close();
         }

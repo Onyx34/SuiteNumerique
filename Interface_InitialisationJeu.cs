@@ -36,7 +36,6 @@ namespace Suites_Numériques
             // Récupération pseudo et mot de passe du joueur 1
             string pseudo1 = textBox_pseudo1.Text;
             pseudo1 = pseudo1.Trim();
-            pseudo1 = pseudo1.Replace(' ', '_');
             pseudo1 = pseudo1.Replace('\t', '_');
             string mdp1 = textBox_mdp1.Text;
             if (mdp1.Contains('\t')) //Contrôle pour ne pas qu'il y ai de tabulation dans le mot de passe
@@ -122,6 +121,29 @@ namespace Suites_Numériques
                 }
             }
 
+            // Fin de la partie
+            Interface_Scores scores = new Interface_Scores(joueur1, joueur2);
+
+            // Met à jour les meilleurs scores dans le fichier joueurs (pour les jeux avec chrono)
+            if (chrono)
+            {
+                joueur1.MettreAJourScore();
+                joueur2.MettreAJourScore();
+            }
+
+            // Affiche les scores
+            scores.ShowDialog();            
+            if (scores.DialogResult == DialogResult.OK)
+            {
+                // Reset les scores pour relancer une partie
+                joueur1.Score = 0;
+                joueur2.Score = 0;
+            }
+            else
+            {
+                // Retour au menu
+                this.Close();
+            }
         }
 
         private void JouerQuestion(joueur joueur, int QuestionNum)
@@ -130,7 +152,7 @@ namespace Suites_Numériques
             // Fait appel à Interface_Jeu pour chaque question
             MessageBox.Show($"{joueur.Pseudo}, c'est à vous !", "Prêt ?", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            Interface_Jeu jeu = new Interface_Jeu(joueur1, joueur2,tour, QuestionNum, chrono, suite);
+            Interface_Jeu jeu = new Interface_Jeu(joueur1, joueur2, tour, QuestionNum, chrono, suite);
             jeu.ShowDialog();
         }
     }

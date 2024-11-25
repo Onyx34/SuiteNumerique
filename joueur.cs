@@ -79,5 +79,41 @@ namespace Suites_Numériques
             fichierEcriture.Close();
             return true;
         }
+
+        public void MettreAJourScore()
+        {
+            // Méthode pour mettre à jour le meilleur score dans le fichier joueurs.txt
+            // Parcour le fichier pour trouver le joueur, si le score est meilleur, le remplace
+
+            // Initionalisation des variables
+            string nomFichier = "joueurs.txt";
+            StreamReader fichierLecture;
+            StreamWriter fichierEcriture;
+            string[] ligne;
+            char delimiteur = '\t';
+            List<string> lignes = new List<string>();
+
+            fichierLecture = new StreamReader(nomFichier);
+            while (!fichierLecture.EndOfStream)
+            {
+                ligne = fichierLecture.ReadLine().Split(delimiteur);
+                if (ligne[0] == pseudo)
+                {
+                    if (score > int.Parse(ligne[2]))
+                    {
+                        ligne[2] = score.ToString();
+                    }
+                }
+                lignes.Add(ligne[0] + delimiteur + ligne[1] + delimiteur + ligne[2]);
+            }
+            fichierLecture.Close();
+
+            fichierEcriture = new StreamWriter(nomFichier);
+            foreach (string l in lignes)
+            {
+                fichierEcriture.WriteLine(l);
+            }
+            fichierEcriture.Close();
+        }
     }
 }
