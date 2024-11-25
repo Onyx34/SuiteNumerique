@@ -116,6 +116,7 @@
             this.MinimizeBox = false;
             this.Name = "Interface_Scores";
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Jeu : Scores";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -76,6 +76,12 @@
     <Compile Include="Interface_Jeu.Designer.cs">
       <DependentUpon>Interface_Jeu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface_MeilleurScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_MeilleurScore.Designer.cs">
+      <DependentUpon>Interface_MeilleurScore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface_Scores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interface_Jeu.resx">
       <DependentUpon>Interface_Jeu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_MeilleurScore.resx">
+      <DependentUpon>Interface_MeilleurScore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface_Scores.resx">
       <DependentUpon>Interface_Scores.cs</DependentUpon>
