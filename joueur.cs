@@ -113,7 +113,7 @@ namespace Suites_Numériques
             fichierLecture.Close();
 
             fichierEcriture = new StreamWriter(nomFichier, true);
-            fichierEcriture.WriteLine(pseudo + delimiteur + LePassword + delimiteur + "0");
+            fichierEcriture.WriteLine(pseudo + delimiteur + LePassword + delimiteur + "-6");
             fichierEcriture.Close();
             return true;
         }
