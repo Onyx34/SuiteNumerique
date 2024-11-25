@@ -20,10 +20,15 @@ namespace Suites_Numériques
                 label_vainqueur.Text = $"VAINQUEUR : {joueur1.Pseudo}";
                 label_vainqueur.ForeColor = Color.Red;
             }
-            else
+            else if (joueur1.Score < joueur2.Score)
             {
                 label_vainqueur.Text = $"VAINQUEUR : {joueur2.Pseudo}";
                 label_vainqueur.ForeColor = Color.Blue;
+            }
+            else
+            {
+                label_vainqueur.Text = "EGALITE";
+                label_vainqueur.ForeColor = Color.Black;
             }
             label_joueur1.Text = $"{joueur1.Pseudo} : {joueur1.Score}";
             label_joueur2.Text = $"{joueur2.Pseudo} : {joueur2.Score}";
