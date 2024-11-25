@@ -30,6 +30,7 @@ namespace Suites_Numériques
         public joueur(int LeRang)
         {
             // Constructeur permmettant de créer un joueur à partir de son rang (score) dans le fichier joueurs.txt
+            VerifierExistanceFichier();
 
             int compteur = 0;
             string nomFichier = "joueurs.txt";
@@ -83,7 +84,7 @@ namespace Suites_Numériques
             // Ouvre puis parcour le fichier "joueurs.txt" pour vérifier si le joueur existe
             // Si le joueur existe, vérifie si le mot de passe est correct et renvois true ou false
             // Sinon , crée un nouveau joueur et renvois true
-
+            VerifierExistanceFichier();
             // Initionalisation des variables
             string nomFichier = "joueurs.txt";
             StreamReader fichierLecture;
@@ -121,7 +122,7 @@ namespace Suites_Numériques
         {
             // Méthode pour mettre à jour le meilleur score dans le fichier joueurs.txt
             // Parcour le fichier pour trouver le joueur, si le score est meilleur, le remplace
-
+            VerifierExistanceFichier();
             // Initionalisation des variables
             string nomFichier = "joueurs.txt";
             StreamReader fichierLecture;
@@ -151,6 +152,18 @@ namespace Suites_Numériques
                 fichierEcriture.WriteLine(l);
             }
             fichierEcriture.Close();
+        }
+
+        private void VerifierExistanceFichier()
+        {
+            // Méthode pour vérifier l'existance du fichier joueurs.txt
+            // Si le fichier n'existe pas, le crée
+            string nomFichier = "joueurs.txt";
+            if (!File.Exists(nomFichier))
+            {
+                StreamWriter fichier = new StreamWriter(nomFichier);
+                fichier.Close();
+            }
         }
     }
 }
