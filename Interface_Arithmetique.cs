@@ -211,6 +211,7 @@ namespace Suites_Numériques
             // Permet de mettre à jour les champs de l'onglet monotonie
             label_U0_monotonie.Text = $"U\u2080 : {suite.Premier}";
             label_r_monotonie.Text = $"r : {suite.Raison}";
+            label_question_monotonie.Text = "Quel est la monotonie de la suite ?";
             label_verif_monotonie.Text = "";
             foreach (RadioButton btn in Bouttons)
             {

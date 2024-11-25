@@ -730,7 +730,7 @@
             // 
             this.radioBtn_Décroissante.AutoSize = true;
             this.radioBtn_Décroissante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtn_Décroissante.Location = new System.Drawing.Point(132, 39);
+            this.radioBtn_Décroissante.Location = new System.Drawing.Point(197, 39);
             this.radioBtn_Décroissante.Name = "radioBtn_Décroissante";
             this.radioBtn_Décroissante.Size = new System.Drawing.Size(194, 24);
             this.radioBtn_Décroissante.TabIndex = 3;
@@ -742,7 +742,7 @@
             // 
             this.radioBtn_Constante.AutoSize = true;
             this.radioBtn_Constante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtn_Constante.Location = new System.Drawing.Point(132, 14);
+            this.radioBtn_Constante.Location = new System.Drawing.Point(197, 14);
             this.radioBtn_Constante.Name = "radioBtn_Constante";
             this.radioBtn_Constante.Size = new System.Drawing.Size(174, 24);
             this.radioBtn_Constante.TabIndex = 2;
