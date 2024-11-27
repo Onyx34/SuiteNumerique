@@ -241,6 +241,8 @@ namespace Suites_Numériques
                     monLabel.Text = "Réponse incorrecte";
                     monLabel.ForeColor = Color.Red;
                 }
+                // Message box de debug, commenter pour l'application finale
+                MessageBox.Show("Réponse : " + int_reponse + " Solution : " + solution, "Debug", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

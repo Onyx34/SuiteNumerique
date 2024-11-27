@@ -163,9 +163,9 @@ namespace Suites_Numériques
 
         private void MaJ_premierTerme()
         {
-            // Permet de mettre à jour les champs de l'onglet Un Terme
-            label_information_premierTerme.Text = $"Soit la suite arithmétique (Uₙ) définie par le terme (U{Program.MettreEnIndice(rang_rang)}) et de raison r :";
-            label_rang_premierTerme.Text = $"U{Program.MettreEnIndice(rang_rang)} : {suite.TermeDeRang(rang_premierTerme)}";
+            // Permet de mettre à jour les champs de l'onglet Premier Terme
+            label_information_premierTerme.Text = $"Soit la suite arithmétique (Uₙ) définie par le terme (U{Program.MettreEnIndice(rang_premierTerme)}) et de raison r :";
+            label_rang_premierTerme.Text = $"U{Program.MettreEnIndice(rang_premierTerme)} : {suite.TermeDeRang(rang_premierTerme)}";
             label_r_premierTerme.Text = $"r : {suite.Raison}";
             label_verif_premierTerme.Text = "";
             textBox_reponse_premierTerme.Text = "";
@@ -241,6 +241,9 @@ namespace Suites_Numériques
                     monLabel.Text = "Réponse incorrecte";
                     monLabel.ForeColor = Color.Red;
                 }
+                // Message box de debug, commenter pour l'application finale
+                // MessageBox.Show("Rang : " + rang_premierTerme + " Réponse : " + int_reponse + " Solution : " + solution, "Debug", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             else
             {

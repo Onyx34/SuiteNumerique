@@ -55,3 +55,4 @@ Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Nu
 Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Scores.resources
 C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_MeilleurScore.resources
 C:\Users\Onyx\Source\Repos\Onyx34\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_Scores.resources
+Z:\TP Suites Numériques  - Terral_Frédéric\SuiteNumerique\obj\Debug\Suites_Numériques.Interface_MeilleurScore.resources

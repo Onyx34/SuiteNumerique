@@ -23,6 +23,7 @@ namespace Suites_Numériques
                 joueur joueur = new joueur(i);
                 Controls[$"label_joueur{i}"].Text = joueur.Pseudo;
                 Controls[$"label_score{i}"].Text = joueur.Score.ToString();
+                Controls[$"label_date{i}"].Text = joueur.Date;
             }
         }
     }

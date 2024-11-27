@@ -59,13 +59,26 @@
             this.label_score3 = new System.Windows.Forms.Label();
             this.label_score2 = new System.Windows.Forms.Label();
             this.label_score1 = new System.Windows.Forms.Label();
+            this.label_date10 = new System.Windows.Forms.Label();
+            this.label_date9 = new System.Windows.Forms.Label();
+            this.label_date8 = new System.Windows.Forms.Label();
+            this.label_date7 = new System.Windows.Forms.Label();
+            this.label_date6 = new System.Windows.Forms.Label();
+            this.label_date5 = new System.Windows.Forms.Label();
+            this.label_date4 = new System.Windows.Forms.Label();
+            this.label_date3 = new System.Windows.Forms.Label();
+            this.label_date2 = new System.Windows.Forms.Label();
+            this.label_date1 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 25);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(185, 31);
             this.label1.TabIndex = 0;
@@ -254,7 +267,7 @@
             // label_score10
             // 
             this.label_score10.AutoSize = true;
-            this.label_score10.Location = new System.Drawing.Point(672, 390);
+            this.label_score10.Location = new System.Drawing.Point(541, 390);
             this.label_score10.Name = "label_score10";
             this.label_score10.Size = new System.Drawing.Size(108, 20);
             this.label_score10.TabIndex = 30;
@@ -263,7 +276,7 @@
             // label_score9
             // 
             this.label_score9.AutoSize = true;
-            this.label_score9.Location = new System.Drawing.Point(672, 360);
+            this.label_score9.Location = new System.Drawing.Point(541, 360);
             this.label_score9.Name = "label_score9";
             this.label_score9.Size = new System.Drawing.Size(99, 20);
             this.label_score9.TabIndex = 29;
@@ -272,7 +285,7 @@
             // label_score8
             // 
             this.label_score8.AutoSize = true;
-            this.label_score8.Location = new System.Drawing.Point(672, 325);
+            this.label_score8.Location = new System.Drawing.Point(541, 325);
             this.label_score8.Name = "label_score8";
             this.label_score8.Size = new System.Drawing.Size(99, 20);
             this.label_score8.TabIndex = 28;
@@ -281,7 +294,7 @@
             // label_score7
             // 
             this.label_score7.AutoSize = true;
-            this.label_score7.Location = new System.Drawing.Point(672, 290);
+            this.label_score7.Location = new System.Drawing.Point(541, 290);
             this.label_score7.Name = "label_score7";
             this.label_score7.Size = new System.Drawing.Size(99, 20);
             this.label_score7.TabIndex = 27;
@@ -290,7 +303,7 @@
             // label_score6
             // 
             this.label_score6.AutoSize = true;
-            this.label_score6.Location = new System.Drawing.Point(672, 255);
+            this.label_score6.Location = new System.Drawing.Point(541, 255);
             this.label_score6.Name = "label_score6";
             this.label_score6.Size = new System.Drawing.Size(99, 20);
             this.label_score6.TabIndex = 26;
@@ -299,7 +312,7 @@
             // label_score5
             // 
             this.label_score5.AutoSize = true;
-            this.label_score5.Location = new System.Drawing.Point(672, 220);
+            this.label_score5.Location = new System.Drawing.Point(541, 220);
             this.label_score5.Name = "label_score5";
             this.label_score5.Size = new System.Drawing.Size(99, 20);
             this.label_score5.TabIndex = 25;
@@ -308,7 +321,7 @@
             // label_score4
             // 
             this.label_score4.AutoSize = true;
-            this.label_score4.Location = new System.Drawing.Point(672, 185);
+            this.label_score4.Location = new System.Drawing.Point(541, 185);
             this.label_score4.Name = "label_score4";
             this.label_score4.Size = new System.Drawing.Size(99, 20);
             this.label_score4.TabIndex = 24;
@@ -317,7 +330,7 @@
             // label_score3
             // 
             this.label_score3.AutoSize = true;
-            this.label_score3.Location = new System.Drawing.Point(672, 150);
+            this.label_score3.Location = new System.Drawing.Point(541, 150);
             this.label_score3.Name = "label_score3";
             this.label_score3.Size = new System.Drawing.Size(99, 20);
             this.label_score3.TabIndex = 23;
@@ -326,7 +339,7 @@
             // label_score2
             // 
             this.label_score2.AutoSize = true;
-            this.label_score2.Location = new System.Drawing.Point(672, 115);
+            this.label_score2.Location = new System.Drawing.Point(541, 115);
             this.label_score2.Name = "label_score2";
             this.label_score2.Size = new System.Drawing.Size(99, 20);
             this.label_score2.TabIndex = 22;
@@ -335,17 +348,150 @@
             // label_score1
             // 
             this.label_score1.AutoSize = true;
-            this.label_score1.Location = new System.Drawing.Point(672, 80);
+            this.label_score1.Location = new System.Drawing.Point(541, 80);
             this.label_score1.Name = "label_score1";
             this.label_score1.Size = new System.Drawing.Size(99, 20);
             this.label_score1.TabIndex = 21;
             this.label_score1.Text = "label_score1";
+            // 
+            // label_date10
+            // 
+            this.label_date10.AutoSize = true;
+            this.label_date10.Location = new System.Drawing.Point(651, 390);
+            this.label_date10.Name = "label_date10";
+            this.label_date10.Size = new System.Drawing.Size(89, 20);
+            this.label_date10.TabIndex = 40;
+            this.label_date10.Text = "17/11/2024";
+            // 
+            // label_date9
+            // 
+            this.label_date9.AutoSize = true;
+            this.label_date9.Location = new System.Drawing.Point(651, 360);
+            this.label_date9.Name = "label_date9";
+            this.label_date9.Size = new System.Drawing.Size(89, 20);
+            this.label_date9.TabIndex = 39;
+            this.label_date9.Text = "17/11/2024";
+            // 
+            // label_date8
+            // 
+            this.label_date8.AutoSize = true;
+            this.label_date8.Location = new System.Drawing.Point(651, 325);
+            this.label_date8.Name = "label_date8";
+            this.label_date8.Size = new System.Drawing.Size(89, 20);
+            this.label_date8.TabIndex = 38;
+            this.label_date8.Text = "17/11/2024";
+            // 
+            // label_date7
+            // 
+            this.label_date7.AutoSize = true;
+            this.label_date7.Location = new System.Drawing.Point(651, 290);
+            this.label_date7.Name = "label_date7";
+            this.label_date7.Size = new System.Drawing.Size(89, 20);
+            this.label_date7.TabIndex = 37;
+            this.label_date7.Text = "17/11/2024";
+            // 
+            // label_date6
+            // 
+            this.label_date6.AutoSize = true;
+            this.label_date6.Location = new System.Drawing.Point(651, 255);
+            this.label_date6.Name = "label_date6";
+            this.label_date6.Size = new System.Drawing.Size(89, 20);
+            this.label_date6.TabIndex = 36;
+            this.label_date6.Text = "17/11/2024";
+            // 
+            // label_date5
+            // 
+            this.label_date5.AutoSize = true;
+            this.label_date5.Location = new System.Drawing.Point(651, 220);
+            this.label_date5.Name = "label_date5";
+            this.label_date5.Size = new System.Drawing.Size(89, 20);
+            this.label_date5.TabIndex = 35;
+            this.label_date5.Text = "17/11/2024";
+            // 
+            // label_date4
+            // 
+            this.label_date4.AutoSize = true;
+            this.label_date4.Location = new System.Drawing.Point(651, 185);
+            this.label_date4.Name = "label_date4";
+            this.label_date4.Size = new System.Drawing.Size(89, 20);
+            this.label_date4.TabIndex = 34;
+            this.label_date4.Text = "17/11/2024";
+            // 
+            // label_date3
+            // 
+            this.label_date3.AutoSize = true;
+            this.label_date3.Location = new System.Drawing.Point(651, 150);
+            this.label_date3.Name = "label_date3";
+            this.label_date3.Size = new System.Drawing.Size(89, 20);
+            this.label_date3.TabIndex = 33;
+            this.label_date3.Text = "17/11/2024";
+            // 
+            // label_date2
+            // 
+            this.label_date2.AutoSize = true;
+            this.label_date2.Location = new System.Drawing.Point(651, 115);
+            this.label_date2.Name = "label_date2";
+            this.label_date2.Size = new System.Drawing.Size(89, 20);
+            this.label_date2.TabIndex = 32;
+            this.label_date2.Text = "17/11/2024";
+            // 
+            // label_date1
+            // 
+            this.label_date1.AutoSize = true;
+            this.label_date1.Location = new System.Drawing.Point(651, 80);
+            this.label_date1.Name = "label_date1";
+            this.label_date1.Size = new System.Drawing.Size(141, 20);
+            this.label_date1.TabIndex = 31;
+            this.label_date1.Text = "17/11/2024 19H45";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(651, 50);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(48, 20);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "Date";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(541, 50);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(56, 20);
+            this.label13.TabIndex = 42;
+            this.label13.Text = "Score";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(74, 50);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(69, 20);
+            this.label14.TabIndex = 43;
+            this.label14.Text = "Pseudo";
             // 
             // Interface_MeilleurScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label_date10);
+            this.Controls.Add(this.label_date9);
+            this.Controls.Add(this.label_date8);
+            this.Controls.Add(this.label_date7);
+            this.Controls.Add(this.label_date6);
+            this.Controls.Add(this.label_date5);
+            this.Controls.Add(this.label_date4);
+            this.Controls.Add(this.label_date3);
+            this.Controls.Add(this.label_date2);
+            this.Controls.Add(this.label_date1);
             this.Controls.Add(this.label_score10);
             this.Controls.Add(this.label_score9);
             this.Controls.Add(this.label_score8);
@@ -423,5 +569,18 @@
         private System.Windows.Forms.Label label_score3;
         private System.Windows.Forms.Label label_score2;
         private System.Windows.Forms.Label label_score1;
+        private System.Windows.Forms.Label label_date10;
+        private System.Windows.Forms.Label label_date9;
+        private System.Windows.Forms.Label label_date8;
+        private System.Windows.Forms.Label label_date7;
+        private System.Windows.Forms.Label label_date6;
+        private System.Windows.Forms.Label label_date5;
+        private System.Windows.Forms.Label label_date4;
+        private System.Windows.Forms.Label label_date3;
+        private System.Windows.Forms.Label label_date2;
+        private System.Windows.Forms.Label label_date1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }

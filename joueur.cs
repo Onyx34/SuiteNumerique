@@ -13,6 +13,7 @@ namespace Suites_Numériques
         // Attributs
         private string pseudo;
         private int score;
+        private string dateHeure; // Chaine pour stocker la date et l'heure en un au lieu de deux attributs (dd/mm/yyyy hh:mm)
 
         // Constructeurs
         public joueur(string LePseudo)
@@ -44,7 +45,7 @@ namespace Suites_Numériques
             while (!fichierLecture.EndOfStream)
             {
                 ligne = fichierLecture.ReadLine().Split(delimiteur);
-                lignes.Add(new string[] { ligne[0], ligne[2] });
+                lignes.Add(new string[] { ligne[0], ligne[2], ligne[3] });
                 compteur++;
             }
             fichierLecture.Close();
@@ -57,11 +58,13 @@ namespace Suites_Numériques
             {
                 pseudo = lignes[LeRang - 1][0];
                 score = int.Parse(lignes[LeRang - 1][1]);
+                dateHeure = lignes[LeRang - 1][2];
             }
             else
             {
                 pseudo = "Inconnu";
                 score = 0;
+                dateHeure = "N/A";
             }
         }
 
@@ -75,6 +78,11 @@ namespace Suites_Numériques
         {
             get { return score; }
             set { score = value; }
+        }
+        public string Date
+        {
+            get { return dateHeure; }
+            set { dateHeure = value; }
         }
 
         // Methodes
@@ -114,7 +122,7 @@ namespace Suites_Numériques
             fichierLecture.Close();
 
             fichierEcriture = new StreamWriter(nomFichier, true);
-            fichierEcriture.WriteLine(pseudo + delimiteur + LePassword + delimiteur + "-6");
+            fichierEcriture.WriteLine(pseudo + delimiteur + LePassword + delimiteur + "-6" + delimiteur + "N/A");
             fichierEcriture.Close();
             return true;
         }
@@ -141,9 +149,10 @@ namespace Suites_Numériques
                     if (score > int.Parse(ligne[2]))
                     {
                         ligne[2] = score.ToString();
+                        ligne[3] = $"{DateTime.Now:dd/MM/yyyy HH:mm}";
                     }
                 }
-                lignes.Add(ligne[0] + delimiteur + ligne[1] + delimiteur + ligne[2]);
+                lignes.Add(ligne[0] + delimiteur + ligne[1] + delimiteur + ligne[2] + delimiteur + ligne[3]);
             }
             fichierLecture.Close();
 
