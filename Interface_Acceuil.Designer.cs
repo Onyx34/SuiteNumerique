@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Interface_Acceuil));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.menuStrip_Entrainement = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip_Arithmetiques = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,7 +39,9 @@
             this.toolStrip_AvecContrainte = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_Meilleurs_temps = new System.Windows.Forms.ToolStripMenuItem();
             this.label_Acceuil = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -129,11 +132,25 @@
             this.label_Acceuil.Text = "Fondamentaux sur les suites numériques";
             this.label_Acceuil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 137);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(859, 412);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Interface_Acceuil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_Acceuil);
             this.Controls.Add(this.menuStrip);
             this.Name = "Interface_Acceuil";
@@ -141,6 +158,7 @@
             this.Text = "Etude des suites numérique en mathématique";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +175,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStrip_SansContrainte;
         private System.Windows.Forms.ToolStripMenuItem toolStrip_AvecContrainte;
         private System.Windows.Forms.Label label_Acceuil;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
