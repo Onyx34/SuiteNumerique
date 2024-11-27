@@ -334,7 +334,7 @@ namespace Suites_Numériques
                     {
                         solution = $"{suiteGeometrique.Raison}$${suiteGeometrique.Premier}";
                     }
-                    reponse = $"{textBox_reponse1.Text}$$${textBox_reponse2.Text}";
+                    reponse = $"{textBox_reponse1.Text}$${textBox_reponse2.Text}";
                     break;
 
                 case 5:
