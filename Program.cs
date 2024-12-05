@@ -17,7 +17,7 @@ namespace Suites_Numériques
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Interface_Acceuil());
+            Application.Run(new Interface_Accueil());
         }
 
         public static int GenererAleatoire(int minValue, int maxValue)

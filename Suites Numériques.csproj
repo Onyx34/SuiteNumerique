@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface_Acceuil.cs">
+    <Compile Include="Interface_Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interface_Acceuil.Designer.cs">
-      <DependentUpon>Interface_Acceuil.cs</DependentUpon>
+    <Compile Include="Interface_Accueil.Designer.cs">
+      <DependentUpon>Interface_Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface_Arithmetique.cs">
       <SubType>Form</SubType>
@@ -94,8 +94,8 @@
     <Compile Include="suite.cs" />
     <Compile Include="suite_arithmetique.cs" />
     <Compile Include="suite_geometrique.cs" />
-    <EmbeddedResource Include="Interface_Acceuil.resx">
-      <DependentUpon>Interface_Acceuil.cs</DependentUpon>
+    <EmbeddedResource Include="Interface_Accueil.resx">
+      <DependentUpon>Interface_Accueil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface_Arithmetique.resx">
       <DependentUpon>Interface_Arithmetique.cs</DependentUpon>
