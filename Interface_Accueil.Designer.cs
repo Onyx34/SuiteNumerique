@@ -145,7 +145,7 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // Interface_Acceuil
+            // Interface_Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,7 +153,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_Acceuil);
             this.Controls.Add(this.menuStrip);
-            this.Name = "Interface_Acceuil";
+            this.Name = "Interface_Accueil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Etude des suites numérique en mathématique";
             this.menuStrip.ResumeLayout(false);
